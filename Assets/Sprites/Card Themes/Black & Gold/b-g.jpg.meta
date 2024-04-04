@@ -1,0 +1,1271 @@
+fileFormatVersion: 2
+guid: 2478afa4812dff44ebbc6e4d36992771
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: b-g_hearts_A
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fb308ab73f2774c932662bedab6594
+      internalID: 564090312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49e049e14fcc4a44911dbbe6b8a974e
+      internalID: -447387871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae37f289f63bae4fb6d73851064fc02
+      internalID: -1235688852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a2e326b73f36b47a6c3c804e0f9334
+      internalID: 188495135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428635aa14bb11042b48bbc2239b9cb3
+      internalID: -1844185355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_6
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14610c427986ae438519aef1d735024
+      internalID: -591432042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aaa011ffd5554645a837e11d152749f
+      internalID: -1719620413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_8
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85edfdf707fb0048afab766326a14e8
+      internalID: -1733642427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_9
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5046436c4522134eb4faf2b0512d75d
+      internalID: 977909925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_10
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2b4e5c6dff00d468c0d33a9513fdf9
+      internalID: -1763282014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_J
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3d129445bcd1341858280cbcc53c96
+      internalID: -1623647932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_Q
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfeb5cfedb9db3043b8eddf48ae88196
+      internalID: 871828126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_hearts_K
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 352
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c950e4a746fd94594dc9330856fe4e
+      internalID: -1265098297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425122972671edf49a4f4ceb9ddfe13e
+      internalID: -1292414222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b1dd650c9a2f241b89b549922a260e
+      internalID: -1983271457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9389a07e6d6010e4abf1d8547cce9503
+      internalID: 1934257422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d768f8ff534c4844b456b4441499b52
+      internalID: -1650846597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067f11a4b47662a42a049b616340b55a
+      internalID: -536558689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_6
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf928257196c724d8494bdbf09631f9
+      internalID: 1202207504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36899fa1722ea34e83b83902fa93362
+      internalID: 86385639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_8
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717962b96f533724ba27df51af2e489a
+      internalID: -2007852656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_9
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f68ec004117334a81ad636487b0f50
+      internalID: 2040281298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_10
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18165296db741644cbf53e2bde3284a3
+      internalID: 538416433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_J
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2280fc0e87718e64caf9a6ab1834f7ae
+      internalID: 430098815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_Q
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b88b872504e5649bc4a7cf4395464c
+      internalID: 1973197977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_diamonds_K
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 254
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f740f48885d79e941b6d20e495631e83
+      internalID: -1210394785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_A
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5aca7feb7001a4490c49bc8d762540
+      internalID: -2139610279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e532cc7d69a38f140bf6e2d685477140
+      internalID: -1676457608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736564e1a69be8e4181b8428cbcace8a
+      internalID: -148139520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6cb70993eb6ad4586f43625e1cba18
+      internalID: 1670723254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84446be031db26542ba907e802ccc565
+      internalID: -720004023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_6
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c336394dd7fdf64e82ec81c4915dc4f
+      internalID: 1036708209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96c1a8c3665ebf40aa8b3d9737cf6e4
+      internalID: -1165482905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_8
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f57f8f4113d65b4da7413833e0293ca
+      internalID: -983312683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_9
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9018a40cd584940b1d00bd7fb07d66
+      internalID: 132445086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_10
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439a635f43fa5754b98eb3c3cfa779d3
+      internalID: -2134665933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_J
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9a657d483fbfd419ace39f6c3cd267
+      internalID: -513624792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_Q
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1734f92a9525da4993d08e9a5b9f92e
+      internalID: -1639422500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_spades_K
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 156
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb5da657f64da1478fed6fb092eaebc
+      internalID: 1989329203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_A
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c25b1b7b5ec76a4593d264cba1e7040
+      internalID: 172761328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb106c5250266de46b2adc9c4d7b3e9e
+      internalID: 1484320179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb72c5fa82fdb81478139c04fed15322
+      internalID: -1022659438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797baf88253061d42ad105ee41f2de31
+      internalID: 1297527247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3eb234e651aa84d8aa241c0cd97eb8
+      internalID: -746040570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_6
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fb4c488ce9816488e83fff8cc51056
+      internalID: 1314593865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f166f2a86d01044ba647c70baaa721a
+      internalID: -686885408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_8
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393b7abf6562dd34aabb0b4971c1a638
+      internalID: -1775792948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_9
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fff851dc30f7441a52d05fb29c3948
+      internalID: -1955404120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_10
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe743d473f9610418e6c732bfd5d3ee
+      internalID: -1953654190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_J
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fba5b0e9306d84ebb78f6119ce1933
+      internalID: -258262635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_Q
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518cd28153b0b814baac7e75ec8d4bc0
+      internalID: 1976415933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b-g_clubs_K
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 58
+        width: 60
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e812fc2bd49141429e67b647919e266
+      internalID: -368039881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      b-g_clubs_10: -1953654190
+      b-g_clubs_2: 1484320179
+      b-g_clubs_3: -1022659438
+      b-g_clubs_4: 1297527247
+      b-g_clubs_5: -746040570
+      b-g_clubs_6: 1314593865
+      b-g_clubs_7: -686885408
+      b-g_clubs_8: -1775792948
+      b-g_clubs_9: -1955404120
+      b-g_clubs_A: 172761328
+      b-g_clubs_J: -258262635
+      b-g_clubs_K: -368039881
+      b-g_clubs_Q: 1976415933
+      b-g_diamonds_: -1292414222
+      b-g_diamonds_10: 538416433
+      b-g_diamonds_2: -1983271457
+      b-g_diamonds_3: 1934257422
+      b-g_diamonds_4: -1650846597
+      b-g_diamonds_5: -536558689
+      b-g_diamonds_6: 1202207504
+      b-g_diamonds_7: 86385639
+      b-g_diamonds_8: -2007852656
+      b-g_diamonds_9: 2040281298
+      b-g_diamonds_J: 430098815
+      b-g_diamonds_K: -1210394785
+      b-g_diamonds_Q: 1973197977
+      b-g_hearts_10: -1763282014
+      b-g_hearts_2: -447387871
+      b-g_hearts_3: -1235688852
+      b-g_hearts_4: 188495135
+      b-g_hearts_5: -1844185355
+      b-g_hearts_6: -591432042
+      b-g_hearts_7: -1719620413
+      b-g_hearts_8: -1733642427
+      b-g_hearts_9: 977909925
+      b-g_hearts_A: 564090312
+      b-g_hearts_J: -1623647932
+      b-g_hearts_K: -1265098297
+      b-g_hearts_Q: 871828126
+      b-g_spades_10: -2134665933
+      b-g_spades_2: -1676457608
+      b-g_spades_3: -148139520
+      b-g_spades_4: 1670723254
+      b-g_spades_5: -720004023
+      b-g_spades_6: 1036708209
+      b-g_spades_7: -1165482905
+      b-g_spades_8: -983312683
+      b-g_spades_9: 132445086
+      b-g_spades_A: -2139610279
+      b-g_spades_J: -513624792
+      b-g_spades_K: 1989329203
+      b-g_spades_Q: -1639422500
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

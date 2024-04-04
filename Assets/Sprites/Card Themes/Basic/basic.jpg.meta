@@ -1,0 +1,1359 @@
+fileFormatVersion: 2
+guid: 6745eec441e941643b5525156905dcfd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: basic_back_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 303
+        width: 63
+        height: 86
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64df16f3e02dcbf4bab483b324ced273
+      internalID: 1506542695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_A
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 302
+        width: 64
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a8e3446e4a6c94daf6a4b664ed0a17
+      internalID: 1287293006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 302
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be46d804db9533f44ac17c44e898ab65
+      internalID: 1782875975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 302
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44df88c029c331c4cab7abaf030b107f
+      internalID: -1962609806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_4
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 302
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d4c77b6a0100a498f15f6e49828030
+      internalID: 1132587214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_5
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 302
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bac6ae4e6f283e46a7cc267e47a8be2
+      internalID: 193409303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 302
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b332e58d113a7d4e88807f3469206b1
+      internalID: -1042486563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 302
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bfe5af67340c24cbe57c56f0214194
+      internalID: -1994369086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_8
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 302
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2cacbff24fc754a89a37570acf63bc
+      internalID: 860670636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_9
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 302
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc30dd2aa50ddce4fb7c9cdba8345909
+      internalID: 1710507451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_10
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 302
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9257735650573ef4da1560cf867ff374
+      internalID: -2041183869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_J
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 302
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8f3030bc6774f458ba08670d79b847
+      internalID: -1039591481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_Q
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 302
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79b4ba11ee80a84d9965f0da9aa79bd
+      internalID: 76319028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_diamond_K
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 302
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353bcbd11c282a244987208c3126a2a2
+      internalID: -1217044544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_joker_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 207
+        width: 64
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4e8c4ebce59444c8c5809f145c301c
+      internalID: 375041719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_A
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 207
+        width: 64
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d44a81825ef4a44ea8f86bfbbcc1d24
+      internalID: 1880751741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 207
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7460684a81ddb498b4aab0bcd5d0ef
+      internalID: 1775563418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 207
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de18c0b0ee3430d479f16212134eefaf
+      internalID: 1200298039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_4
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 207
+        width: 64
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1306fb3a7d64c0c4ab61286308ede39b
+      internalID: -1215288641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_5
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 207
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8362a8065d22b469fe9c441d84dd65
+      internalID: -2086636684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 207
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfe124b2bc4ec44ba9f9f7366561450
+      internalID: 247928222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 207
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79a1d7b813a602429b261bd46450366
+      internalID: 409397967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_8
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 207
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220b14ba561cd5a46a58a737a33f3ba5
+      internalID: 522437395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_9
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 207
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fc1787c3c4f454ea6ca8929d577f1f
+      internalID: 1970856083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_10
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 207
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a435cb9ef2f291241a7ac3826d6248a7
+      internalID: -2130111778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_J
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 207
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028af9534a2a5e141ae6b58129be0482
+      internalID: -602403540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_Q
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 207
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefe0f25c45c31946ab8ee3fa7ba4980
+      internalID: 1115520819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_clubs_K
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 207
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a057265ad565d774d9e477bd7b5668d0
+      internalID: -669082271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_joker_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 64
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9720bf0695a0a45a6bee392ee01f8c
+      internalID: -1210027308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_A
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 112
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb737b02d4a09748b24d8dec71997a0
+      internalID: 410750453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 112
+        width: 64
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc161afe914cdb4bb00ef5fa99baeab
+      internalID: 1814152679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 112
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291dc4e19a971914da6214cfb40b6900
+      internalID: 1868544480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_4
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 112
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d3ca9ac3e3e08459c966c18cb8112e
+      internalID: -1981297026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_5
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 112
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b379119567edf64d95d45ee6939c194
+      internalID: -198344790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 112
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a582b777e6e0c4485173b70e3d75e9
+      internalID: 1174637351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 112
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f3add22daf5b7488e4f9dbd62f8231
+      internalID: -1784591586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_8
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 112
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50a17dbc1c75f74da933ea8e8198566
+      internalID: -1993518102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_9
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 112
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9a025de48d2e64891ab0884152c5b3
+      internalID: 834876884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_10
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 112
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c84cc25b236a094a89e3bf26d7c0726
+      internalID: 1217087822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_J
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 112
+        width: 64
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86554be3355d5d4ebd19cc5977daa73
+      internalID: 42219619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_Q
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 112
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3152c7e27d7d2664b8279a8056b8fbc0
+      internalID: 339948334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_hearts_K
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 112
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bb663fd7735504a800abeadb0fee14
+      internalID: 1497811890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_back_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 17
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef081254424941f458e20a7c447de6e5
+      internalID: 1521504005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_A
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 17
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a23869a55be9804a89fac5bef5021ef
+      internalID: -2024376311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 17
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4d879657b53cc4692af6ce681a1bec
+      internalID: 404915726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 17
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99c4d0b6a103ee449c636ce5a1cdf4c
+      internalID: 1399489477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_4
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 17
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084b8fc96647f4f468fa732360adcc9f
+      internalID: 701799618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 17
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1ed40f631ae4143b1a2636c613d83c
+      internalID: -808685879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 17
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bbb9cbde0ea5f4794ec2174d334fd7
+      internalID: 1690670715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 17
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068f2f59f8b3b5445a41df63e215b743
+      internalID: -825546129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_8
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 17
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24124fbdbc960544c990d33ba1d04ddd
+      internalID: -2014397507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_9
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 17
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6536433cefbe9fb41825ad5ff4f167c2
+      internalID: -385295831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_10
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 17
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8091e1d06316e144836ef586c2a0464
+      internalID: 305603181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_J
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 17
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a1be2210bbcc749b6e8713e1d31884
+      internalID: 1902534469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_Q
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 17
+        width: 62
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d66bb385dcfee4469512ef39e50d749
+      internalID: -1110624518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic_spade_K
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 17
+        width: 63
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf364aee6dfa114fafc4d3676af1431
+      internalID: -1374480891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      basic_back_1: 1506542695
+      basic_back_2: 1287293006
+      basic_clubs_10: 1782875975
+      basic_clubs_2: -1962609806
+      basic_clubs_3: 1132587214
+      basic_clubs_4: 193409303
+      basic_clubs_5: -1042486563
+      basic_clubs_6: -1994369086
+      basic_clubs_7: 860670636
+      basic_clubs_8: 1710507451
+      basic_clubs_9: -2041183869
+      basic_clubs_A: -1039591481
+      basic_clubs_J: 76319028
+      basic_clubs_K: -1217044544
+      basic_clubs_Q: 375041719
+      basic_diamond_10: 1880751741
+      basic_diamond_2: 1775563418
+      basic_diamond_3: 1200298039
+      basic_diamond_4: -1215288641
+      basic_diamond_5: -2086636684
+      basic_diamond_6: 247928222
+      basic_diamond_7: 409397967
+      basic_diamond_8: 522437395
+      basic_diamond_9: 1970856083
+      basic_diamond_A: -2130111778
+      basic_diamond_J: -602403540
+      basic_diamond_K: 1115520819
+      basic_diamond_Q: -669082271
+      basic_hearts_10: -1210027308
+      basic_hearts_2: 410750453
+      basic_hearts_3: 1814152679
+      basic_hearts_4: 1868544480
+      basic_hearts_5: -1981297026
+      basic_hearts_6: -198344790
+      basic_hearts_7: 1174637351
+      basic_hearts_8: -1784591586
+      basic_hearts_9: -1993518102
+      basic_hearts_A: 834876884
+      basic_hearts_J: 1217087822
+      basic_hearts_K: 42219619
+      basic_hearts_Q: 339948334
+      basic_joker_1: 1497811890
+      basic_joker_2: 1521504005
+      basic_spade_: -2024376311
+      basic_spade_10: 404915726
+      basic_spade_2: 1399489477
+      basic_spade_3: 701799618
+      basic_spade_4: -808685879
+      basic_spade_6: 1690670715
+      basic_spade_7: -825546129
+      basic_spade_8: -2014397507
+      basic_spade_9: -385295831
+      basic_spade_A: 305603181
+      basic_spade_J: 1902534469
+      basic_spade_K: -1110624518
+      basic_spade_Q: -1374480891
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

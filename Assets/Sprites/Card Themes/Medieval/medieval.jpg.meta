@@ -1,0 +1,1359 @@
+fileFormatVersion: 2
+guid: 749e836d003e51841a716e91a743be64
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: medieval_hearts_A
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c06c70ae70344041b49d8541248b20e
+      internalID: -1238097295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756f7f490a6aa994a8734ccaa9dedaf1
+      internalID: -712926437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaeb414d75ddbcb4ab551967fd76483a
+      internalID: 6311188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a171c5f8a8ab23746bb9531da7eeeb62
+      internalID: -453296500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_5
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966b0830f21b11148a6a265157b98adf
+      internalID: -2082247385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c806eba33a5272349adfa7f29359565a
+      internalID: -1297164565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_7
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8dc289b7c67034296478e181205d35
+      internalID: -194509039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_8
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0364af6cfd32b9c4c91d36a7b1e8ca0b
+      internalID: -1830776728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_9
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be68fc78f06fbe48b8f274af36b4f0c
+      internalID: 2083753498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf31ab7fdd470e4eb616cab435d21cd
+      internalID: 489044251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_J
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942c701852bf29c4eb9ce177f731bd35
+      internalID: 123725033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_Q
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b1223a94ce36e48ac25f3c22f0eb74
+      internalID: -492662170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_hearts_K
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fbf6e4a510a1840b26f606ff1b4ae4
+      internalID: -1497164685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_joker_1
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 308
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f63ea70e09679f42b7c14bf6b17e826
+      internalID: 919026058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_A
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bf3bad6f25cf645b724b7c6a4b9357
+      internalID: 1234873687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69dd11b2f9701c44990477403f022ec
+      internalID: -163317179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39e9a81a4315ca4f883cbce4f61d38e
+      internalID: -312404577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8efb81d4ae089f4fa060f38caec0400
+      internalID: -306741406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_5
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e816edb898f24d4eae80359d84ba892
+      internalID: 837406281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689543f1fb57e944d952b27be35234e8
+      internalID: -196429794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_7
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4dc681b9672e542bb4cf5f7633caa0
+      internalID: 845122552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_8
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c630ebf860c43c4799be0ef02884d28
+      internalID: 1257893279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_9
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8017c10857d45447b3d048b0c3a68f1
+      internalID: -1003766879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed138e3df48fbd4fa0d81576b839ddb
+      internalID: -1219437243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_J
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d2f0d72017bad48925d6be89bba5f2
+      internalID: -858599029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_Q
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710987634e723e54f91393cbfcd70c98
+      internalID: -724528221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_diamonds_K
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6650724234835fc42b097f57a7aee082
+      internalID: -362909819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_back_1
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 211
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2031633a14eea42a78d4f501e159ce
+      internalID: -579233038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_A
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facfe9520b01af949b95a015481c9d82
+      internalID: -54681934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca5b1da8fcd46143b24f8ba7e6e8569
+      internalID: 1602280831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4f0a2da5e35bc42af6fa04a0700314
+      internalID: -4106781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3eb342bbb37bb4791bbe0b4287a34e
+      internalID: 1785701110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_5
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b70b799e8aae494389d45c0cf5e34ae
+      internalID: 650745996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3f82dd8fb7e3a4f838475499cdb2c5
+      internalID: 1064637399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_7
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732d3f03ffe9c1843837b6dc6b6ce2d0
+      internalID: -1637692595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_8
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94068cf9408cdc6448ce59c6f2ded5e2
+      internalID: 678750858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_9
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56221160ee7a30144a1ecd7aa718a57a
+      internalID: -933913855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a948aadc4ba1c4d86d80ed77683238
+      internalID: -1754007947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_J
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aabdde5a1420ab4dad71d2a2abc5a1b
+      internalID: 421858274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_Q
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d710d0f98fec8374e93c225c29ea911a
+      internalID: -1898419451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_clubs_K
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a783d62c42bddd143a97a61bb027f144
+      internalID: 858841106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_joker_2
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 114
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cb73c04b1c4bf42ac75f9e4a264150
+      internalID: -929037679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_A
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60ea13552e4e2d478a79dff6c96019d
+      internalID: -1467622870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48c625bce7ef924dbec3ad7316cb24d
+      internalID: 293922849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e6933b9b6daf34da2040247172ffa1
+      internalID: -669516139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727308727bb64744ebea99a64a9af3ae
+      internalID: 1192580574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_5
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1817d66046b4bed40bbf808073ae6449
+      internalID: -1164981866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfcbf0f23a21f64c92fa074e71e29db
+      internalID: -1264208779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_7
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7787258c816c2c24cab970422aaca9ef
+      internalID: -979921475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_8
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b590c913098ba4a8416e98090c693f
+      internalID: -2021692262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_9
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a8d7095ca9cb04f82bb07435df3466
+      internalID: -491629157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4b1d9a4b4782f428ceca3be724777f
+      internalID: -630576656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_J
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bc14ff8b8be6049b94a8bf70803d8e
+      internalID: 1047758522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_Q
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c639afc7557ab3b43a94345c743f5956
+      internalID: 1350316025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spades_K
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ecc033836505443af6bdbdb97a1f6f
+      internalID: -1412578398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_back_2
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 17
+        width: 63
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5a04b33b470784fab8d6a4a371d801
+      internalID: 1034569320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      medieval_back_1: -579233038
+      medieval_back_2: 1034569320
+      medieval_clubs_10: -1754007947
+      medieval_clubs_2: 1602280831
+      medieval_clubs_3: -4106781
+      medieval_clubs_4: 1785701110
+      medieval_clubs_5: 650745996
+      medieval_clubs_6: 1064637399
+      medieval_clubs_7: -1637692595
+      medieval_clubs_8: 678750858
+      medieval_clubs_9: -933913855
+      medieval_clubs_A: -54681934
+      medieval_clubs_J: 421858274
+      medieval_clubs_K: 858841106
+      medieval_clubs_Q: -1898419451
+      medieval_diamonds_10: -1219437243
+      medieval_diamonds_2: -163317179
+      medieval_diamonds_3: -312404577
+      medieval_diamonds_4: -306741406
+      medieval_diamonds_5: 837406281
+      medieval_diamonds_6: -196429794
+      medieval_diamonds_7: 845122552
+      medieval_diamonds_8: 1257893279
+      medieval_diamonds_9: -1003766879
+      medieval_diamonds_A: 1234873687
+      medieval_diamonds_J: -858599029
+      medieval_diamonds_K: -362909819
+      medieval_diamonds_Q: -724528221
+      medieval_hearts_10: 489044251
+      medieval_hearts_2: -712926437
+      medieval_hearts_3: 6311188
+      medieval_hearts_4: -453296500
+      medieval_hearts_5: -2082247385
+      medieval_hearts_6: -1297164565
+      medieval_hearts_7: -194509039
+      medieval_hearts_8: -1830776728
+      medieval_hearts_9: 2083753498
+      medieval_hearts_A: -1238097295
+      medieval_hearts_J: 123725033
+      medieval_hearts_K: -1497164685
+      medieval_hearts_Q: -492662170
+      medieval_joker_1: 919026058
+      medieval_joker_2: -929037679
+      medieval_spades_10: -630576656
+      medieval_spades_2: 293922849
+      medieval_spades_3: -669516139
+      medieval_spades_4: 1192580574
+      medieval_spades_5: -1164981866
+      medieval_spades_6: -1264208779
+      medieval_spades_7: -979921475
+      medieval_spades_8: -2021692262
+      medieval_spades_9: -491629157
+      medieval_spades_A: -1467622870
+      medieval_spades_J: 1047758522
+      medieval_spades_K: -1412578398
+      medieval_spades_Q: 1350316025
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
