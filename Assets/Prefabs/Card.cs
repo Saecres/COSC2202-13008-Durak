@@ -2,30 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Card : MonoBehaviour
+[System.Serializable]
+public class Card
 {
-    // Properties to store the suit and rank of the card
-    public string CardSuit { get; private set; }
-    public string CardRank { get; private set; }
+    public string suit;
+    public string rank;
 
-    // We can also include a property for the card's sprite if needed
-    public Sprite CardSprite { get; private set; }
-
-    // Method to initialize the card's properties
-    public void Initialize(string suit, string rank, Sprite sprite)
+    public Card(string suit, string rank)
     {
-        CardSuit = suit;
-        CardRank = rank;
-        CardSprite = sprite;
-
-        // Update the sprite renderer with the correct card sprite
-        GetComponent<SpriteRenderer>().sprite = CardSprite;
+        this.suit = suit;
+        this.rank = rank;
     }
-
-    // A method to determine if this card beats another card in a trick
-    //public bool Beats(Card otherCard)
-    //{
-        // Implement game-specific logic here to compare cards
-        // Return true if this card beats the otherCard
-    //}
 }
+
