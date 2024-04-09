@@ -4,16 +4,30 @@ using UnityEngine;
 
 public class CardDatabase : MonoBehaviour
 {
+    public static CardDatabase Instance;
     public static List<Card> cardList = new List<Card>();
 
     void Awake()
     {
-        InitializeDeck();
-        ShuffleDeck();
+        if (Instance == null)
+        {
+            Instance = this;
+            InitializeDeck();
+            ShuffleDeck();
+        }
+        else if (Instance != this)
+        {
+            Debug.LogWarning("Another instance of CardDatabase was attempted to be created, but only one instance is allowed.");
+        }
     }
+
+    public string trumpSuit;
 
     void InitializeDeck()
     {
+        // Clear the list to avoid duplicating cards if re-initialized
+        cardList.Clear();
+
         // Adding cards to the deck
         string[] suits = new string[] { "hearts", "diamond", "clubs", "spade" };
         string[] ranks = new string[] { "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
@@ -24,6 +38,13 @@ public class CardDatabase : MonoBehaviour
             {
                 cardList.Add(new Card(suit, rank));
             }
+        }
+        // Ensure the deck is not empty before choosing a trump suit
+        if (cardList.Count > 0)
+        {
+            int trumpIndex = Random.Range(0, cardList.Count);
+            trumpSuit = cardList[trumpIndex].suit;
+            Debug.Log("Trump Suit: " + trumpSuit);
         }
     }
 
