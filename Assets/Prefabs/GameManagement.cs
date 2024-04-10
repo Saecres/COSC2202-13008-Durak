@@ -25,22 +25,28 @@ public class GameManagement : MonoBehaviour
     // It ensures that the game starts with the correct setup.
     void InitializeGame()
     {
-        InitializePlayers(2); // Initializing players
+        InitializePlayers(2, GameSettings.IsPlayingAgainstAI); // Initializing players based on game mode
         DealCards();
         AssignInitialRoles();
         uiManager = FindObjectOfType<UIManager>();
-        uiManager.UpdateHandDisplay(currentAttacker.hand); // Always update UI for current attacker
+        uiManager.UpdateHandDisplay(currentAttacker.hand); // Update UI for current attacker
+        uiManager.UpdateOpponentHandDisplay(currentDefender.hand); // Update UI for opponent's hand
     }
+
 
     // This method creates player instances based on the specified number of players.
     // It initializes the players with their names and whether they are controlled by AI.
-    void InitializePlayers(int numberOfPlayers)
+    void InitializePlayers(int numberOfPlayers, bool isSecondPlayerAI)
     {
-        for (int i = 0; i < numberOfPlayers; i++)
+        players.Add(new Player("Player 1", false)); // First player is always human
+        // For the second player, check if it is an AI or a human based on the isSecondPlayerAI parameter
+        if (isSecondPlayerAI)
         {
-            // Example names are "Player 1" and "AI" for simplicity
-            Player player = new Player(i == 0 ? "Player 1" : "AI", i != 0);
-            players.Add(player);
+            players.Add(new Player("AI", true)); // Second player as AI
+        }
+        else
+        {
+            players.Add(new Player("Player 2", false)); // Second player as human
         }
     }
 
@@ -68,6 +74,9 @@ public class GameManagement : MonoBehaviour
 
         // Toggle the turn flag.
         isPlayerTurn = !isPlayerTurn;
+
+        uiManager.UpdateHandDisplay(currentAttacker.hand);
+        uiManager.UpdateOpponentHandDisplay(currentDefender.hand);
     }
 
     // This method deals cards to the players from the deck.
@@ -102,7 +111,7 @@ public class GameManagement : MonoBehaviour
             }
             else
             {
-                PromptPlayerForDefenseOrFollowUp(); // Pseudo-method for UI prompts.
+                PromptPlayerForDefenseOrFollowUp();
             }
         }
         else
@@ -118,9 +127,24 @@ public class GameManagement : MonoBehaviour
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
         uiManager.MoveCardToPlayArea(cardToPlay);
-        uiManager.UpdateHandDisplay(player.hand); // Update the attacker's hand display
+
+        // Check if the current attacker is AI to decide which hand to update.
+        if (player.isAI)
+        {
+            uiManager.UpdateOpponentHandDisplay(player.hand);
+        }
+        else
+        {
+            // Update the player's hand UI.
+            uiManager.UpdateHandDisplay(player.hand);
+        }
+
+        // Since the defender might not change, consider updating this outside of the conditionals if the defender's hand can be affected otherwise.
+        uiManager.UpdateOpponentHandDisplay(currentDefender.hand);
+
         Debug.Log($"{player.name} attacks with: {cardToPlay.rank} of {cardToPlay.suit}");
     }
+
 
     // This method handles a defense initiated by a player.
     // It executes the defense, updates the game state, and handles follow-up actions if necessary.
@@ -152,24 +176,35 @@ public class GameManagement : MonoBehaviour
     {
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
+        uiManager.MoveCardToPlayArea(cardToPlay);  // This moves the defending card to the play area visually.
 
+        Debug.Log($"{player.name} defends with: {cardToPlay.rank} of {cardToPlay.suit}");
+
+        // After a defense action, regardless of who defended, update both hands.
+        // This ensures the game state is accurately reflected in the UI.
         if (player.isAI)
         {
-            // Additional steps if the defender is AI, like updating UI accordingly.
-            uiManager.MoveCardToPlayArea(cardToPlay);
-            Debug.Log($"{player.name} defends with: {cardToPlay.rank} of {cardToPlay.suit}");
-            // After AI defense, check if the player (now the attacker) has a follow-up attack.
-            if (!CheckForFollowUpAttack(currentAttacker))
-            {
-                EndTurn(); // End the turn if no follow-up attack is possible.
-            }
+            // If the AI was defending, update its display. Since the AI is the current defender, we update the opponent hand.
+            uiManager.UpdateOpponentHandDisplay(player.hand); //The AI is always considered the 'opponent'.
         }
         else
         {
-            // Logic for when a human player successfully defends.
+            // If a human player was defending, update their hand display directly.
             uiManager.UpdateHandDisplay(player.hand);
         }
+
+        // Now, update the attacker's hand, as it might change if the attacker can follow up.
+        Player attackingPlayer = (player == currentAttacker) ? currentDefender : currentAttacker; // Determine the current attacker.
+        uiManager.UpdateOpponentHandDisplay(attackingPlayer.hand); // Update the attacker's hand as well for visibility.
+
+        // Check for follow-up actions or end the turn.
+        if (!CheckForFollowUpAttack(currentAttacker))
+        {
+            EndTurn(); // End the turn if no follow-up attack is possible.
+        }
     }
+
+
 
     // This method ends the current turn by preparing for the next turn.
     // It handles role switching, dealing cards if needed, and initiating the next turn.
@@ -248,6 +283,18 @@ public class GameManagement : MonoBehaviour
         }
     }
 
+    bool PlayerHasPlayableAttackCards(Player player)
+    {
+        return player.hand.Any(card => CanPlayerAttackWithCard(card));
+    }
+
+    bool PlayerHasPlayableDefenseCards(Player player, Card attackingCard)
+    {
+        return player.hand.Any(card => CanPlayerDefendWithCard(attackingCard, card));
+    }
+
+
+
 
     // This method attempts an attack by a player, handling the attack logic and follow-up actions.
     // It executes an attack if valid and handles follow-up actions if possible.
@@ -260,6 +307,13 @@ public class GameManagement : MonoBehaviour
             uiManager.MoveCardToPlayArea(cardToPlay);
             uiManager.RemoveCardFromHandDisplay(cardIndex);
             Debug.Log($"{player.name} attacks with: {cardToPlay.rank} of {cardToPlay.suit}");
+
+            if (player.isAI)
+            {
+                // If AI is attacking, update the opponent hand UI to reflect the removed card.
+                uiManager.RemoveCardFromOpponentHandDisplay(cardIndex); 
+            }
+            uiManager.UpdateOpponentHandDisplay(currentDefender.hand);
 
             // Determine if a follow-up attack is possible
             if (CheckForFollowUpAttack(player))
@@ -284,6 +338,7 @@ public class GameManagement : MonoBehaviour
             Debug.LogError("Invalid attack move.");
         }
     }
+
 
 
 
@@ -338,15 +393,27 @@ public class GameManagement : MonoBehaviour
 
     void InitiateNextTurn()
     {
+        // Before proceeding with the AI's or player's turn, check if the current attacker has playable cards.
         if (currentAttacker.isAI)
         {
+            // If the attacker is AI, we check for playable cards specifically for attacking.
+            // For AI, we'll directly attempt an action or handle automatic forfeiture inside AITakeAction() for clarity.
             Debug.Log("AI's turn to attack/Defend.");
-            AITakeAction(); // Proceed with AI's turn.
+            AITakeAction();
         }
         else
         {
-            Debug.Log("Player's turn to attack. Select a card to play.");
-            // Trigger player UI for attack selection.
+            // For the player, explicitly check if there are any valid attack moves before prompting for action.
+            if (!PlayerHasPlayableAttackCards(currentAttacker))
+            {
+                // Log and handle automatic forfeiture if no valid moves.
+                Debug.Log("Player has no valid attack options. Automatically forfeiting turn.");
+                HandlePlayerForfeit(isAutomaticForfeit: true);
+            }
+            else
+            {
+                Debug.Log("Player's turn to attack. Select a card to play.");
+            }
         }
     }
 
@@ -354,7 +421,7 @@ public class GameManagement : MonoBehaviour
 
     // This method checks if the player can defend against the current attack with the specified card.
     // It verifies if the defending card is valid based on game rules and the current attack.
-    bool CanPlayerAttackWithCard(Card card)
+    public bool CanPlayerAttackWithCard(Card card)
     {
         // If the play area is empty, any card can initiate an attack.
         if (!playArea.Any()) return true;
@@ -364,7 +431,7 @@ public class GameManagement : MonoBehaviour
     }
 
 
-    bool CanPlayerDefendWithCard(Card attackingCard, Card defendingCard)
+    public bool CanPlayerDefendWithCard(Card attackingCard, Card defendingCard)
     {
         if (attackingCard == null) return false;
 
@@ -385,19 +452,54 @@ public class GameManagement : MonoBehaviour
 
     // This method handles the player forfeiting their turn, either in attack or defense.
     // It processes the forfeit action, updates the game state, and ends the turn.
-    public void HandlePlayerForfeit()
+    public void HandlePlayerForfeit(bool isAutomaticForfeit = false, bool isAI = false)
     {
-        if (isPlayerTurn)
+        if (isAI)
         {
-            if (currentAttacker == players[0]) // Player is the attacker and chooses to forfeit
+            // If the forfeit comes from the AI, this is an automatic process, as the player doesn't manually trigger AI actions.
+            Debug.Log("AI automatically forfeits the turn due to no playable cards.");
+
+            if (currentAttacker.isAI) // AI is the attacker and automatically forfeits
             {
-                Debug.Log("Player forfeits attack. Cards in play area are discarded.");
+                Debug.Log("AI forfeits attack. Cards in play area are discarded.");
+                ForfeitAttackAndDiscard();
+            }
+            else // AI is the defender and automatically forfeits
+            {
+                Debug.Log("AI forfeits defense. Picking up play area cards.");
+                DefenderPicksUpCards();
+            }
+            EndTurn(); // Transition to the next phase of the game.
+        }
+        else if (isPlayerTurn)
+        {
+            if (currentAttacker == players[0]) // Player is the attacker
+            {
+                if (isAutomaticForfeit)
+                {
+                    // The player has no valid attack options and automatically forfeits the attack.
+                    Debug.Log("Player automatically forfeits attack due to no valid cards.");
+                }
+                else
+                {
+                    // The player manually decides to forfeit the attack.
+                    Debug.Log("Player forfeits attack. Cards in play area are discarded.");
+                }
                 ForfeitAttackAndDiscard();
                 EndTurn(); // Use EndTurn to manage the transition properly.
             }
-            else // Player is the defender and chooses to forfeit
+            else // Player is the defender
             {
-                Debug.Log("Player forfeits defense. Picking up play area cards.");
+                if (isAutomaticForfeit)
+                {
+                    // The player has no valid defense options and automatically picks up the play area cards.
+                    Debug.Log("Player automatically picks up play area cards due to no valid defense.");
+                }
+                else
+                {
+                    // The player manually decides to forfeit the defense.
+                    Debug.Log("Player forfeits defense. Picking up play area cards.");
+                }
                 DefenderPicksUpCards();
                 // Cards are moved from play area to player's hand
                 players[0].hand.AddRange(playArea);
@@ -407,9 +509,12 @@ public class GameManagement : MonoBehaviour
         }
         else
         {
-            Debug.LogError("HandlePlayerForfeit called during AI's turn - this should be handled within the AI's logic.");
+            Debug.LogError("HandlePlayerForfeit called during an unexpected state - this should be handled within the game's logic.");
         }
     }
+
+
+
 
 
     // This method discards the cards in the play area when the player forfeits their attack.

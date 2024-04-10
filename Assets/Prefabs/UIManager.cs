@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
 {
     public Transform playerHandTransform;
     public Transform playAreaTransform;
+    public Transform opponentHandTransform;
+
     public GameObject cardPrefab;
     [SerializeField] private Sprite[] cardSprites;
     public GameManagement gameManagement;
@@ -51,6 +53,25 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void UpdateOpponentHandDisplay(List<Card> opponentHand)
+    {
+        // Clear out the old hand
+        foreach (Transform child in opponentHandTransform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Instantiate a UI card for each card in the opponent's hand
+        for (int i = 0; i < opponentHand.Count; i++)
+        {
+            Card card = opponentHand[i];
+            GameObject newCard = Instantiate(cardPrefab, opponentHandTransform);
+            Image cardImage = newCard.GetComponent<Image>();
+            cardImage.sprite = GetCardSprite(card); // Set the card image
+        }
+    }
+
+
     public void RemoveCardFromHandDisplay(int cardIndex)
     {
         // Ensure the hand display is assigned
@@ -71,6 +92,26 @@ public class UIManager : MonoBehaviour
         Destroy(playerHandTransform.GetChild(cardIndex).gameObject);
     }
 
+    public void RemoveCardFromOpponentHandDisplay(int cardIndex)
+    {
+        // Ensure the opponent hand display is assigned
+        if (opponentHandTransform == null)
+        {
+            Debug.LogError("Opponent hand display transform is not assigned.");
+            return;
+        }
+
+        // Ensure the card index is valid
+        if (cardIndex < 0 || cardIndex >= opponentHandTransform.childCount)
+        {
+            Debug.LogError("Invalid opponent card index.");
+            return;
+        }
+
+        // Destroy the card game object at the specified index in the opponent's hand
+        Destroy(opponentHandTransform.GetChild(cardIndex).gameObject);
+    }
+
 
 
     public void OnCardSelected(int cardIndex)
@@ -78,7 +119,6 @@ public class UIManager : MonoBehaviour
         // First, retrieve the card from the player's hand using the cardIndex.
         Card selectedCard = gameManagement.currentAttacker.hand[cardIndex];
 
-        // Assuming the current attacker is the human player and thus the action is an attack.
         if (gameManagement.isPlayerTurn) // Check if it's indeed the player's turn to ensure correct game flow.
         {
             // Now, call HandleAttack since it's the player's turn to attack.
@@ -150,7 +190,6 @@ public class UIManager : MonoBehaviour
     {
         gameManagement.HandlePlayerForfeit();
     }
-
 
 
 

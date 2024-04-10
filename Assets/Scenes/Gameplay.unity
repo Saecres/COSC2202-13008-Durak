@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHandTransform: {fileID: 1728520783}
   playAreaTransform: {fileID: 389655846}
+  opponentHandTransform: {fileID: 613612094}
   cardPrefab: {fileID: 806827910}
   cardSprites:
   - {fileID: 1814152679, guid: 6745eec441e941643b5525156905dcfd, type: 3}
@@ -1741,6 +1742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHandTransform: {fileID: 1728520783}
   playAreaTransform: {fileID: 389655846}
+  opponentHandTransform: {fileID: 613612094}
   cardPrefab: {fileID: 806827910}
   cardSprites: []
   gameManagement: {fileID: 1912383191}
