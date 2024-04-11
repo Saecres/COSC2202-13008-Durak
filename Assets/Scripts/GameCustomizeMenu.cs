@@ -28,4 +28,14 @@ public class GameCustomizeMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Gameplay");
     }
+
+    public void Load1PlayerScene()
+    {
+        SceneManager.LoadScene("1P Customization");
+    }
+
+    public void Load2PlayerScene()
+    {
+        SceneManager.LoadScene("2P Customization");
+    }
 }

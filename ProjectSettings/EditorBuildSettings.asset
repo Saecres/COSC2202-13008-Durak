@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Customize.unity
     guid: 7290d2505ff06af449cf19335f2b6485
   - enabled: 1
+    path: Assets/Scenes/1P Customization.unity
+    guid: b7ee38bfcacca024aade696e24b1c7f7
+  - enabled: 1
+    path: Assets/Scenes/2P Customization.unity
+    guid: 6f7d8a9a58630524c9d9da340e6f27fe
+  - enabled: 1
     path: Assets/Scenes/Avatar Select.unity
     guid: 745874a58520dd347826362017ac66a0
   - enabled: 1
