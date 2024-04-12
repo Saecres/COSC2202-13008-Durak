@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 507309606}
   - component: {fileID: 507309605}
   m_Layer: 5
-  m_Name: Background
+  m_Name: gameplayBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 404c8ca2f36e87e41a4cf6ac088d5943, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -672,6 +672,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -753,6 +754,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baea7508c5708464cacd36eaa6818a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundImages:
+  - {fileID: 21300000, guid: 83517b09e1624b247973ca2b8632b11b, type: 3}
+  - {fileID: 21300000, guid: 404c8ca2f36e87e41a4cf6ac088d5943, type: 3}
+  - {fileID: 21300000, guid: 8cf02dcbab8bba34e87b3b1a424ac0ee, type: 3}
+  - {fileID: 21300000, guid: 95e4579574da93c44bfa131bde2e87fe, type: 3}
+  - {fileID: 21300000, guid: 43aa5dad36e58aa4388579cc494a507b, type: 3}
+  - {fileID: 21300000, guid: ac1c46ec47f87c646841a690223f5946, type: 3}
+  gameplayBackground: {fileID: 507309605}
 --- !u!1 &613612093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,6 +1330,7 @@ GameObject:
   - component: {fileID: 1291316488}
   - component: {fileID: 1291316487}
   - component: {fileID: 1291316486}
+  - component: {fileID: 1291316490}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1410,6 +1432,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1291316490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291316485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baea7508c5708464cacd36eaa6818a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundImages:
+  - {fileID: 21300000, guid: 83517b09e1624b247973ca2b8632b11b, type: 3}
+  - {fileID: 21300000, guid: 404c8ca2f36e87e41a4cf6ac088d5943, type: 3}
+  - {fileID: 21300000, guid: 8cf02dcbab8bba34e87b3b1a424ac0ee, type: 3}
+  - {fileID: 21300000, guid: 95e4579574da93c44bfa131bde2e87fe, type: 3}
+  - {fileID: 21300000, guid: 43aa5dad36e58aa4388579cc494a507b, type: 3}
+  - {fileID: 21300000, guid: ac1c46ec47f87c646841a690223f5946, type: 3}
+  gameplayBackground: {fileID: 507309605}
 --- !u!1 &1297229297
 GameObject:
   m_ObjectHideFlags: 0
