@@ -5,6 +5,7 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 public class PlayerManager : MonoBehaviour
 {
     public UIManager uiManager;
+    public GameManagement gameManagement;
     public CardDatabase cardDatabase; // Handles card distribution
 
     public List<Player> players { get; private set; } = new List<Player>();
@@ -44,16 +45,6 @@ public class PlayerManager : MonoBehaviour
         uiManager.UpdateOpponentHandDisplay(CurrentDefender.hand);
     }
 
-    public void SwitchRoles()
-    {
-        var temp = CurrentAttacker;
-        CurrentAttacker = CurrentDefender;
-        CurrentDefender = temp;
-        IsPlayerTurn = !IsPlayerTurn;
-
-        uiManager.UpdateHandDisplay(CurrentAttacker.hand);
-        uiManager.UpdateOpponentHandDisplay(CurrentDefender.hand);
-    }
 
     public void DealCards()
     {

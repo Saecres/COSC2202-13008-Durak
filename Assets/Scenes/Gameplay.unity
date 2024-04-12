@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430ad12fd75a6254fa4ecc8bf41284b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerManager: {fileID: 1596706241}
+  gameManagement: {fileID: 1912383191}
   playerHandTransform: {fileID: 1728520783}
   playAreaTransform: {fileID: 389655846}
   opponentHandTransform: {fileID: 613612094}
@@ -228,7 +230,6 @@ MonoBehaviour:
   - {fileID: -602403540, guid: 6745eec441e941643b5525156905dcfd, type: 3}
   - {fileID: -669082271, guid: 6745eec441e941643b5525156905dcfd, type: 3}
   - {fileID: 1115520819, guid: 6745eec441e941643b5525156905dcfd, type: 3}
-  gameManagement: {fileID: 1912383191}
 --- !u!1 &283155845
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 45.143005, y: 0.001953125}
+  m_AnchoredPosition: {x: 45.143066, y: 0.001953125}
   m_SizeDelta: {x: -752.37, y: -733.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &389655847
@@ -787,7 +788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 45.141968, y: 356.51}
+  m_AnchoredPosition: {x: 45.14209, y: 356.51}
   m_SizeDelta: {x: -752.3672, y: -713.0123}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &613612095
@@ -1014,11 +1015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1068199392254693234, guid: 55ce055503026bc46aa1fa60d049d9fb, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1068199392254693234, guid: 55ce055503026bc46aa1fa60d049d9fb, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 250
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 1068199392254693234, guid: 55ce055503026bc46aa1fa60d049d9fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1763,6 +1764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 203706125}
+  gameManagement: {fileID: 1912383191}
   cardDatabase: {fileID: 1381516179}
 --- !u!1 &1728520782
 GameObject:
@@ -1799,7 +1801,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 45.14203, y: -356.50616}
+  m_AnchoredPosition: {x: 45.14209, y: -356.5061}
   m_SizeDelta: {x: -752.3671, y: -713.0123}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1728520784
@@ -1921,6 +1923,7 @@ MonoBehaviour:
   cardDatabase: {fileID: 1381516179}
   playArea: []
   isPlayerTurn: 1
+  discardPileCount: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -5,13 +5,14 @@ using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour
 {
+    public PlayerManager playerManager;
+    public GameManagement gameManagement;
     public Transform playerHandTransform;
     public Transform playAreaTransform;
     public Transform opponentHandTransform;
 
     public GameObject cardPrefab;
     [SerializeField] private Sprite[] cardSprites;
-    public GameManagement gameManagement;
     public static UIManager Instance;
 
     void Awake()
@@ -116,25 +117,32 @@ public class UIManager : MonoBehaviour
 
     public void OnCardSelected(int cardIndex)
     {
-        // First, retrieve the card from the player's hand using the cardIndex.
-        Card selectedCard = gameManagement.currentAttacker.hand[cardIndex];
-
-        if (gameManagement.isPlayerTurn) // Check if it's indeed the player's turn to ensure correct game flow.
+        // Validate the index first
+        if ((gameManagement.isPlayerTurn && cardIndex >= gameManagement.currentAttacker.hand.Count) ||
+            (!gameManagement.isPlayerTurn && cardIndex >= gameManagement.currentDefender.hand.Count))
         {
-            // Now, call HandleAttack since it's the player's turn to attack.
+            Debug.LogError("Card index out of range.");
+            return;
+        }
+
+        Card selectedCard = gameManagement.isPlayerTurn ?
+            gameManagement.currentAttacker.hand[cardIndex] :
+            gameManagement.currentDefender.hand[cardIndex];
+
+        if (gameManagement.isPlayerTurn)
+        {
             gameManagement.HandleAttack(gameManagement.currentAttacker, selectedCard);
         }
-        else if (!gameManagement.isPlayerTurn && gameManagement.currentDefender == gameManagement.players[0]) // It's the player's turn to defend.
+        else if (!gameManagement.isPlayerTurn && gameManagement.currentDefender == playerManager.players[0])
         {
-            // Check if the current defender is indeed the player, and then proceed with defense.
             gameManagement.HandleDefense(gameManagement.currentDefender, selectedCard);
         }
         else
         {
-            // Log an error or handle cases where a card is selected when it shouldn't be, e.g., not the player's turn.
             Debug.LogError("Card selected at an inappropriate time.");
         }
     }
+
 
 
 
@@ -182,14 +190,15 @@ public class UIManager : MonoBehaviour
     public void MoveCardToPlayerHand(GameObject card, Transform playerHandTransform)
     {
         card.transform.SetParent(playerHandTransform);
-        card.transform.localPosition = Vector3.zero; 
-        card.SetActive(true); 
+        card.transform.localPosition = Vector3.zero;
+        card.SetActive(true);
     }
 
     public void OnForfeitButtonClicked()
     {
-        gameManagement.HandlePlayerForfeit();
+        gameManagement.HandlePlayerForfeit(isAutomaticForfeit: false, isAI: false);
     }
+
 
 
 
