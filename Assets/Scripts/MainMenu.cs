@@ -8,4 +8,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Game Customize");
     }
+
+    public void LaunchGame()
+    {
+        SceneManager.LoadSceneAsync("Gameplay");
+    }
+
 }

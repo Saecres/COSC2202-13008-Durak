@@ -6,7 +6,7 @@ public class Player
 {
     public List<Card> hand = new List<Card>();
     public bool isAI = false;
-    public string name; // Added name property for identification
+    public string name;
 
     public Player(string name, bool isAI = false)
     {

@@ -1,61 +1,76 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class CardDatabase : MonoBehaviour
 {
     public static CardDatabase Instance;
-    public static List<Card> cardList = new List<Card>();
+    public List<Card> cardList = new List<Card>(); // Changed from static to instance variable
+    public string trumpSuit; // Added trump suit property
 
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
             InitializeDeck();
             ShuffleDeck();
+            SetTrumpSuit();
         }
         else if (Instance != this)
         {
-            Debug.LogWarning("Another instance of CardDatabase was attempted to be created, but only one instance is allowed.");
+            Destroy(gameObject);
         }
     }
 
-    public string trumpSuit;
-
-    void InitializeDeck()
+    public void InitializeDeck()
     {
-        // Clear the list to avoid duplicating cards if re-initialized
         cardList.Clear();
+        string[] suits = { "hearts", "diamond", "clubs", "spade" };
+        string[] ranks = { "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
 
-        // Adding cards to the deck
-        string[] suits = new string[] { "hearts", "diamond", "clubs", "spade" };
-        string[] ranks = new string[] { "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
-
-        foreach (string suit in suits)
+        foreach (var suit in suits)
         {
-            foreach (string rank in ranks)
+            foreach (var rank in ranks)
             {
                 cardList.Add(new Card(suit, rank));
             }
         }
-        // Ensure the deck is not empty before choosing a trump suit
+        Debug.Log("Deck initialized with " + cardList.Count + " cards");
+    }
+
+
+    public void ShuffleDeck()
+    {
+        int n = cardList.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = Random.Range(0, n + 1);
+            Card value = cardList[k];
+            cardList[k] = cardList[n];
+            cardList[n] = value;
+        }
+    }
+
+    public void SetTrumpSuit()
+    {
         if (cardList.Count > 0)
         {
-            int trumpIndex = Random.Range(0, cardList.Count);
-            trumpSuit = cardList[trumpIndex].suit;
+            int randomIndex = Random.Range(0, cardList.Count);
+            trumpSuit = cardList[randomIndex].suit; // Assign a random card's suit as the trump
             Debug.Log("Trump Suit: " + trumpSuit);
         }
     }
 
-    void ShuffleDeck()
+    public Card GetNextCard()
     {
-        for (int i = 0; i < cardList.Count; i++)
+        if (cardList.Count > 0)
         {
-            Card temp = cardList[i];
-            int randomIndex = Random.Range(0, cardList.Count);
-            cardList[i] = cardList[randomIndex];
-            cardList[randomIndex] = temp;
+            Card card = cardList[0];
+            cardList.RemoveAt(0);
+            return card;
         }
+        return null;
     }
 }
