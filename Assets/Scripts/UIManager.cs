@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
 {
     public PlayerManager playerManager;
     public GameManagement gameManagement;
+    public GameRules gameRules;
+
     public Transform playerHandTransform;
     public Transform playAreaTransform;
     public Transform opponentHandTransform;

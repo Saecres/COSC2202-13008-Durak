@@ -73,7 +73,6 @@ public class GameManagement : MonoBehaviour
     // Handles a player's attack attempt.
     public void HandleAttack(Player player, Card cardToPlay)
     {
-        Debug.Log($"{player.name} attempts to attack with {cardToPlay.rank} of {cardToPlay.suit}");
         if (gameRules.CanPlayerAttackWithCard(cardToPlay, playArea))
         {
             ExecuteAttack(player, cardToPlay);
@@ -129,6 +128,7 @@ public class GameManagement : MonoBehaviour
             else
             {
                 EndTurn(); // If no follow-up attack is possible, end the turn
+                DealCardsIfNeeded();
             }
         }
         else
@@ -154,22 +154,16 @@ public class GameManagement : MonoBehaviour
     public void EndTurn()
     {
         Debug.Log("Cards Left In Deck = " + cardDatabase.cardList.Count);
-        Debug.Log("Ending turn. Current attacker: " + currentAttacker.name + "Current Defender: " + currentDefender.name);
         if (!CanAttackerContinue() || DidDefenderPickUp())
         {
             Debug.Log("Conditions met to switch roles.");
             //SwitchRoles();
         }
-        Debug.Log("Ending turn. Current attacker: " + currentAttacker.name + "Current Defender: " + currentDefender.name);
         UpdateGameState();
         SwitchRoles();
         didDefenderPickUp = false;
         DealCardsIfNeeded();
         InitiateNextTurn();
-        if (playArea.Any())
-        {
-            Debug.LogError("Play area should be empty but contains cards.");
-        }
         Debug.Log($"Total discard count: {discardPileCount}");
     }
 
@@ -193,6 +187,12 @@ public class GameManagement : MonoBehaviour
         int cardsPerPlayer = 6;
         bool updated = false;  // Flag to track if any changes were made
 
+        if (cardDatabase.cardList.Count == 0)
+        {
+            Debug.Log("Deck is empty, no more cards to deal.");
+            return; // Exit the method if the deck is empty.
+        }
+
         foreach (Player player in playerManager.players)
         {
             while (player.hand.Count < cardsPerPlayer && cardDatabase.cardList.Count > 0)
@@ -201,34 +201,29 @@ public class GameManagement : MonoBehaviour
                 Card cardToDeal = cardDatabase.cardList[0];
                 cardDatabase.cardList.RemoveAt(0);
                 player.AddCardToHand(cardToDeal);
+                Debug.Log($"Dealt {cardToDeal.rank} of {cardToDeal.suit} to {player.name}. Cards left in deck: {cardDatabase.cardList.Count}");
                 updated = true;  // Set flag to indicate an update occurred
             }
         }
 
         if (updated)
         {
-            // Update the UI only once after all necessary cards have been dealt
-            foreach (Player player in playerManager.players)
+            foreach (Player player in players)
             {
                 uiManager.UpdateHandDisplay(player.hand);
             }
-            UpdateGameState();  // Update UI state once all changes are made
-        }
-
-        if (cardDatabase.cardList.Count == 0)
-        {
-            Debug.Log("Deck is empty.");
+            UpdateGameState();  
         }
     }
+
+
 
 
     // Initiates the next turn, checking if the current attacker has playable cards.
     public void InitiateNextTurn()
     {
-        Debug.Log("Initiating next turn. Current attacker: " + currentAttacker.name + ", is AI: " + currentAttacker.isAI);
         if (currentAttacker.isAI)
         {
-            Debug.Log("AI's turn to attack or defend.");
             UpdateGameState();
             aiManager.AITakeAction();
         }
@@ -250,15 +245,14 @@ public class GameManagement : MonoBehaviour
         {
             Debug.Log($"{(isAI ? "AI" : "Player")} forfeits attack. Discarding play area cards.");
             ForfeitAttackAndDiscard();
+            DealCardsIfNeeded();
         }
         else  // The current defender is forfeiting
         {
             Debug.Log($"{(isAI ? "AI" : "Player")} forfeits defense. Picking up play area cards.");
             DefenderPicksUpCards();
+            DealCardsIfNeeded();
         }
-
-        // End the turn after handling the forfeit
-        EndTurn();
     }
 
 
@@ -366,26 +360,44 @@ public class GameManagement : MonoBehaviour
 
     private void CheckForGameEnd()
     {
-        // Check if the deck is empty
+        Debug.Log($"Deck is empty: {cardDatabase.cardList.Count == 0}");
+        foreach (Player player in playerManager.players)
+        {
+            Debug.Log($"{player.name} has {player.hand.Count} cards.");
+        }
+
+
+
         if (cardDatabase.cardList.Count == 0)
         {
-            List<Player> playersWithCards = players.Where(p => p.hand.Count > 0).ToList();
+            Player winner = playerManager.players.FirstOrDefault(p => p.hand.Count == 0);
+            if (winner != null)
+            {
+                Debug.Log($"{winner.name} has won the game by emptying their hand first!");
+                EndGame(winner, false);
+                return;
+            }
 
+            List<Player> playersWithCards = playerManager.players.Where(p => p.hand.Count > 0).ToList();
             if (playersWithCards.Count == 1)
             {
-                // If only one player has cards left, they are the Durak
-                Debug.Log($"{playersWithCards[0].name} is the Durak!");
-                EndGame(playersWithCards[0], true);
+                Player durak = playersWithCards[0];
+                Debug.Log($"{durak.name} is the Durak for having cards left!");
+                EndGame(durak, true);
             }
-            else if (playersWithCards.Count == 0)
+            else if (playersWithCards.Count > 1)
             {
-                // If no players have cards, find the previous player who emptied their hand first (assumed winner)
-                Player winner = players.OrderBy(p => p.hand.Count).FirstOrDefault();
-                Debug.Log($"{winner.name} has won the game!");
-                EndGame(winner, false);
+                Debug.Log("Game continues, more than one player still has cards.");
+            }
+            else
+            {
+                Debug.LogError("Unexpected state: No cards in any hands but no winner declared.");
             }
         }
     }
+
+
+
 
     private void EndGame(Player player, bool isDurak)
     {
@@ -400,8 +412,7 @@ public class GameManagement : MonoBehaviour
         // Here you could trigger any end-game UI updates or transitions
     }
 
-    // This method should be called after each action that can potentially end the game
-    // For example, after a player's turn, after drawing cards, etc.
+
     public void UpdateGameState()
     {
         CheckForGameEnd();

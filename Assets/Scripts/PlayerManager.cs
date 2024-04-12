@@ -15,7 +15,7 @@ public class PlayerManager : MonoBehaviour
 
     void Start()
     {
-        // Initialization if needed, can also be triggered from GameManagement
+        
     }
 
     public void InitializePlayers(int numberOfPlayers, bool isSecondPlayerAI)
