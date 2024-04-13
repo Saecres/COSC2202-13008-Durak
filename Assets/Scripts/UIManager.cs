@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
-using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
@@ -210,47 +209,4 @@ public class UIManager : MonoBehaviour
         else
             Debug.LogError("Deck count Text UI component is not assigned.");
     }
-
-/*    public void MoveCardToPlayArea(Card card, bool isPlayerCard, HorizontalLayoutGroup layoutGroup)
-    {
-        GameObject newCard = Instantiate(cardPrefab, playAreaTransform);
-        newCard.transform.position = isPlayerCard ? playerHandTransform.position : opponentHandTransform.position; // Start position based on whose card it is
-        Image cardImage = newCard.GetComponent<Image>();
-        cardImage.sprite = GetCardSprite(card); // Set the card sprite
-
-        StartCoroutine(MoveCard(newCard, playAreaTransform.position, layoutGroup)); // Animate to play area with layout group handling
-    }
-
-    public float cardMoveDuration = 0.5f; // Duration in seconds for the card to move from hand to play area.
-
-    IEnumerator MoveCard(GameObject cardObject, Vector3 endPosition, HorizontalLayoutGroup layoutGroup)
-    {
-        // Disable the layout group while animating
-        if (layoutGroup != null)
-        {
-            layoutGroup.enabled = false;
-        }
-
-        float timeElapsed = 0;
-        Vector3 startPosition = cardObject.transform.position;
-
-        while (timeElapsed < cardMoveDuration)
-        {
-            timeElapsed += Time.deltaTime;
-            cardObject.transform.position = Vector3.Lerp(startPosition, endPosition, timeElapsed / cardMoveDuration);
-            yield return null;
-        }
-
-        cardObject.transform.position = endPosition; // Ensure it snaps to final position
-
-        // Re-enable the layout group after animation
-        if (layoutGroup != null)
-        {
-            layoutGroup.enabled = true;
-        }
-    }*/
-
-
-
 }
-

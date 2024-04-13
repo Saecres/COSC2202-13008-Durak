@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameManagement : MonoBehaviour
 {
@@ -103,11 +102,9 @@ public class GameManagement : MonoBehaviour
         Debug.Log($"{player.name} successfully attacks with {cardToPlay.rank} of {cardToPlay.suit}");
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
-        // uiManager.MoveCardToPlayArea(cardToPlay, player == currentAttacker, uiManager.playerHandTransform.GetComponent<HorizontalLayoutGroup>());
-
+        uiManager.MoveCardToPlayArea(cardToPlay);
         UpdateGameState();
     }
-
 
     // Handles a player's defense attempt.
     public void HandleDefense(Player player, Card cardToPlay)
@@ -168,12 +165,9 @@ public class GameManagement : MonoBehaviour
         Debug.Log($"{player.name} successfully defends with {cardToPlay.rank} of {cardToPlay.suit}");
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
-
-        // uiManager.MoveCardToPlayArea(cardToPlay, player == currentDefender, uiManager.opponentHandTransform.GetComponent<HorizontalLayoutGroup>());
-
+        uiManager.MoveCardToPlayArea(cardToPlay);
         UpdateGameState();
     }
-
 
     // Ends the current turn and prepares for the next.
     public void EndTurn()
@@ -261,7 +255,7 @@ public class GameManagement : MonoBehaviour
             {
                 uiManager.UpdateHandDisplay(player.hand);
             }
-            UpdateGameState();  
+            UpdateGameState();
         }
     }
 
