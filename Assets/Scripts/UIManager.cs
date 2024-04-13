@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     public Transform playAreaTransform;
     public Transform opponentHandTransform;
 
+    public Text deckCountText;
     public GameObject cardPrefab;
     [SerializeField] private Sprite[] cardSprites;
     public static UIManager Instance;
@@ -201,7 +202,12 @@ public class UIManager : MonoBehaviour
         gameManagement.HandlePlayerForfeit(isAutomaticForfeit: false, isAI: false);
     }
 
-
-
-
+    public void UpdateDeckCountDisplay(int count)
+    {
+        if (deckCountText != null)
+            deckCountText.text = count.ToString();
+        else
+            Debug.LogError("Deck count Text UI component is not assigned.");
+    }
 }
+

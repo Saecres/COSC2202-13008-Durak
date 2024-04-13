@@ -57,7 +57,6 @@ public class PlayerManager : MonoBehaviour
                 if (nextCard != null)
                 {
                     player.AddCardToHand(nextCard);  // Add the card to the player's hand
-                    Debug.Log($"Dealt {nextCard.rank} of {nextCard.suit} to {player.name}");
                 }
                 else
                 {

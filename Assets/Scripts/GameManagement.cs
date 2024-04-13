@@ -13,12 +13,12 @@ public class GameManagement : MonoBehaviour
 
     public List<Player> players = new List<Player>();
     public List<Card> playArea = new List<Card>();
-    private List<Card> discardPile = new List<Card>();
+    public List<Card> discardPile = new List<Card>();
 
     public bool isPlayerTurn;
     public Player currentAttacker;
     public Player currentDefender;
-    private bool didDefenderPickUp = false;
+    public bool didDefenderPickUp = false;
     public int discardPileCount = 0;
 
 
@@ -36,6 +36,7 @@ public class GameManagement : MonoBehaviour
         uiManager = FindObjectOfType<UIManager>();
         uiManager.UpdateHandDisplay(currentAttacker.hand);
         uiManager.UpdateOpponentHandDisplay(currentDefender.hand);
+        UIManager.Instance.UpdateDeckCountDisplay(cardDatabase.cardList.Count);
     }
 
 
@@ -110,25 +111,40 @@ public class GameManagement : MonoBehaviour
     {
         Debug.Log($"{player.name} attempts to defend with {cardToPlay.rank} of {cardToPlay.suit}");
         Card attackingCard = playArea.LastOrDefault();
+
         if (gameRules.CanPlayerDefendWithCard(attackingCard, cardToPlay))
         {
             ExecuteDefense(player, cardToPlay);
-            // Check if a follow-up attack is possible by the original attacker
-            if (gameRules.CheckForFollowUpAttack(currentAttacker, playArea))
+            // After a successful defense, check for follow-up attacks
+            if (!didDefenderPickUp)  // Ensure we only continue if the defender hasn't picked up cards
             {
+                bool canFollowUp = gameRules.CheckForFollowUpAttack(currentAttacker, playArea);
                 if (currentAttacker.isAI)
                 {
-                    aiManager.AIInitiateFollowUpAttack(); // Let AI continue attacking if possible
+                    if (canFollowUp)
+                    {
+                        aiManager.AIInitiateFollowUpAttack(); // AI attempts a follow-up attack
+                    }
+                    else
+                    {
+                        EndTurn(); // Ends AI's turn if no follow-up is possible
+                    }
                 }
                 else
                 {
-                    gameRules.PromptPlayerForFollowUpAttack(); // Prompt human player for follow-up attack if AI was defending
+                    if (canFollowUp)
+                    {
+                        gameRules.PromptPlayerForFollowUpAttack(); // Prompt human player for follow-up attack
+                    }
+                    else
+                    {
+                        EndTurn(); // Ends player's turn if no follow-up is possible
+                    }
                 }
             }
             else
             {
-                EndTurn(); // If no follow-up attack is possible, end the turn
-                DealCardsIfNeeded();
+                EndTurn(); // End the turn if the defender picked up cards
             }
         }
         else
@@ -136,6 +152,9 @@ public class GameManagement : MonoBehaviour
             Debug.LogError("Invalid defense move.");
         }
     }
+
+
+
 
 
 
@@ -153,20 +172,46 @@ public class GameManagement : MonoBehaviour
     // Ends the current turn and prepares for the next.
     public void EndTurn()
     {
-        Debug.Log("Cards Left In Deck = " + cardDatabase.cardList.Count);
-        if (!CanAttackerContinue() || DidDefenderPickUp())
+        // This flag will determine whether the game state needs to be updated and turn needs to be initiated.
+        bool endTurnConditionsMet = false;
+
+        if (!CanAttackerContinue())
         {
-            Debug.Log("Conditions met to switch roles.");
-            //SwitchRoles();
+            Debug.Log("Attacker cannot continue, discarding play area cards.");
+            DiscardPlayAreaCards();
+            discardPileCount += playArea.Count;
+            SwitchRoles();  // Switch roles for the next turn
+            didDefenderPickUp = false;  // Reset the flag if set
+            endTurnConditionsMet = true;
         }
-        UpdateGameState();
-        SwitchRoles();
-        didDefenderPickUp = false;
-        DealCardsIfNeeded();
-        InitiateNextTurn();
-        Debug.Log($"Total discard count: {discardPileCount}");
+        else if (DidDefenderPickUp())
+        {
+            Debug.Log("Defender picked up cards, switching roles.");
+            SwitchRoles();
+            didDefenderPickUp = false;  // Reset the flag after switching roles
+            endTurnConditionsMet = true;
+        }
+
+        // Only perform these actions if one of the end-turn conditions has been met
+        if (endTurnConditionsMet)
+        {
+            DiscardPlayAreaCards();
+            discardPileCount += playArea.Count;
+            DealCardsIfNeeded();  // Ensure players have the right number of cards
+            InitiateNextTurn();  // Start the next turn
+            UpdateGameState();  // Update the game state to reflect changes
+        }
     }
 
+    private void DiscardPlayAreaCards()
+    {
+        if (playArea.Count > 0)
+        {
+            discardPile.AddRange(playArea);  // Add all play area cards to the discard pile
+            playArea.Clear();  // Clear the play area
+            Debug.Log("Moved play area cards to discard pile.");
+        }
+    }
 
 
     // Checks if the attacker has any valid moves left.
@@ -189,7 +234,6 @@ public class GameManagement : MonoBehaviour
 
         if (cardDatabase.cardList.Count == 0)
         {
-            Debug.Log("Deck is empty, no more cards to deal.");
             return; // Exit the method if the deck is empty.
         }
 
@@ -201,7 +245,6 @@ public class GameManagement : MonoBehaviour
                 Card cardToDeal = cardDatabase.cardList[0];
                 cardDatabase.cardList.RemoveAt(0);
                 player.AddCardToHand(cardToDeal);
-                Debug.Log($"Dealt {cardToDeal.rank} of {cardToDeal.suit} to {player.name}. Cards left in deck: {cardDatabase.cardList.Count}");
                 updated = true;  // Set flag to indicate an update occurred
             }
         }
@@ -250,6 +293,7 @@ public class GameManagement : MonoBehaviour
         else  // The current defender is forfeiting
         {
             Debug.Log($"{(isAI ? "AI" : "Player")} forfeits defense. Picking up play area cards.");
+            didDefenderPickUp = true;
             DefenderPicksUpCards();
             DealCardsIfNeeded();
         }
@@ -274,8 +318,6 @@ public class GameManagement : MonoBehaviour
             Debug.LogError("Attempted to discard from an empty play area.");
         }
         UpdateGameState();
-        SwitchRoles();
-        DealCardsIfNeeded();
         EndTurn();
     }
 
@@ -298,6 +340,7 @@ public class GameManagement : MonoBehaviour
         }
         else
         {
+            didDefenderPickUp = true;
             DefenderPicksUpCards();
             UpdateGameState();
         }
@@ -332,11 +375,6 @@ public class GameManagement : MonoBehaviour
         uiManager.UpdateHandDisplay(currentAttacker.hand);
         uiManager.UpdateOpponentHandDisplay(currentDefender.hand);
 
-        Debug.Log($"Roles switched. New attacker: {currentAttacker.name}, defender: {currentDefender.name}");
-
-        // Ensure both players have at least 6 cards in their hand, if possible
-        DealCardsIfNeeded();
-
         UpdateGameState();
     }
 
@@ -354,20 +392,11 @@ public class GameManagement : MonoBehaviour
             uiManager.UpdateHandDisplay(currentDefender.hand); // Update opponent's hand now on the player side
             uiManager.UpdateOpponentHandDisplay(currentAttacker.hand); // Update player's hand now on the opponent side
         }
-
-        Debug.Log("UI updated: Attacker - " + currentAttacker.name + ", Defender - " + currentDefender.name);
+        UIManager.Instance.UpdateDeckCountDisplay(cardDatabase.cardList.Count);
     }
 
     private void CheckForGameEnd()
     {
-        Debug.Log($"Deck is empty: {cardDatabase.cardList.Count == 0}");
-        foreach (Player player in playerManager.players)
-        {
-            Debug.Log($"{player.name} has {player.hand.Count} cards.");
-        }
-
-
-
         if (cardDatabase.cardList.Count == 0)
         {
             Player winner = playerManager.players.FirstOrDefault(p => p.hand.Count == 0);
@@ -409,7 +438,6 @@ public class GameManagement : MonoBehaviour
         {
             Debug.Log($"Congratulations! {player.name} has won the game.");
         }
-        // Here you could trigger any end-game UI updates or transitions
     }
 
 

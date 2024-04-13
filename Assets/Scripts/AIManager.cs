@@ -27,8 +27,8 @@ public class AIManager : MonoBehaviour
     // Initiates a follow-up attack by the AI if a valid card is found.
     public void AIInitiateFollowUpAttack()
     {
-        Player currentAttacker = gameManagement.GetCurrentAttacker();
-        List<Card> playArea = gameManagement.GetPlayArea();
+        Player currentAttacker = GetCurrentAttacker();
+        List<Card> playArea = GetPlayArea();
         Card followUpCard = currentAttacker.hand.FirstOrDefault(card => gameRules.CanPlayerAttackWithCard(card, playArea));
 
         if (followUpCard != null)
@@ -37,9 +37,11 @@ public class AIManager : MonoBehaviour
         }
         else
         {
-            EndAttackTurnAndPrepareForNext(false); // No valid card for follow-up attack
+            Debug.Log("AI has no valid follow-up attack options.");
+            gameManagement.HandlePlayerForfeit(); // Ensure this call is correct - consider the state before ending the turn
         }
     }
+
 
     // Decides AI's actions based on current game state, handling attack or defense.
     public void AITakeAction()
@@ -121,31 +123,12 @@ public class AIManager : MonoBehaviour
         playArea.Clear();
         uiManager.ClearPlayArea();
         Debug.Log("AI cannot defend and picks up the play area cards.");
+
+        // Set flag to indicate defender picked up cards
+        gameManagement.didDefenderPickUp = true;
+
+        // Move to the next phase after picking up cards
         gameManagement.EndTurn();
     }
-
-    // Ends the current attack turn and prepares for the next phase based on whether the defense was successful.
-    private void EndAttackTurnAndPrepareForNext(bool defenseSuccessful)
-    {
-        if (defenseSuccessful)
-        {
-            Debug.Log("Defense was successful, checking for follow-up options.");
-            if (gameRules.CheckForFollowUpAttack(gameManagement.GetCurrentAttacker(), GetPlayArea()))
-            {
-                Debug.Log("Follow-up attack is possible.");
-                gameRules.PromptPlayerForFollowUpAttack();
-            }
-            else
-            {
-                gameManagement.EndTurn();
-            }
-        }
-        else
-        {
-            Debug.Log("Defense failed, AI picks up cards.");
-            AIForfeitDefenseAndPickUpCards(gameManagement.GetCurrentDefender(), gameManagement.GetPlayArea());
-        }
-    }
-
 
 }
