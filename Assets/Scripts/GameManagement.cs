@@ -177,7 +177,7 @@ public class GameManagement : MonoBehaviour
 
         if (!CanAttackerContinue())
         {
-            Debug.Log("Attacker cannot continue, discarding play area cards.");
+            Debug.Log("Attacker cannot continue");
             DiscardPlayAreaCards();
             discardPileCount += playArea.Count;
             SwitchRoles();  // Switch roles for the next turn
@@ -197,6 +197,7 @@ public class GameManagement : MonoBehaviour
         {
             DiscardPlayAreaCards();
             discardPileCount += playArea.Count;
+            uiManager.ClearPlayArea();
             DealCardsIfNeeded();  // Ensure players have the right number of cards
             InitiateNextTurn();  // Start the next turn
             UpdateGameState();  // Update the game state to reflect changes
@@ -393,6 +394,7 @@ public class GameManagement : MonoBehaviour
             uiManager.UpdateOpponentHandDisplay(currentAttacker.hand); // Update player's hand now on the opponent side
         }
         UIManager.Instance.UpdateDeckCountDisplay(cardDatabase.cardList.Count);
+        uiManager.UpdateDiscardPileDisplay(discardPile);
     }
 
     private void CheckForGameEnd()

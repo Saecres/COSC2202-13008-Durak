@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public class UIManager : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class UIManager : MonoBehaviour
     public Transform opponentHandTransform;
 
     public Text deckCountText;
+    public Image discardPileImage;
+    public Text discardPileCountText;
+
     public GameObject cardPrefab;
     [SerializeField] private Sprite[] cardSprites;
     public static UIManager Instance;
@@ -57,6 +61,26 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void UpdateDiscardPileDisplay(List<Card> discardPile)
+    {
+        if (discardPile.Count > 0)
+        {
+            Card topCard = discardPile.Last(); // Assumes the last card is the top of the pile
+            discardPileImage.sprite = GetCardSprite(topCard); // Update image to show the top card
+            discardPileImage.gameObject.SetActive(true); // Ensure the image is visible
+        }
+        else
+        {
+            discardPileImage.gameObject.SetActive(false); // Hide if no cards are in the pile
+        }
+
+        // Update count text
+        if (discardPileCountText != null)
+        {
+            discardPileCountText.text = discardPile.Count.ToString();
+        }
+    }
+
     public void UpdateOpponentHandDisplay(List<Card> opponentHand)
     {
         // Clear out the old hand
@@ -65,15 +89,42 @@ public class UIManager : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        // Instantiate a UI card for each card in the opponent's hand
-        for (int i = 0; i < opponentHand.Count; i++)
+        // Choose sprite based on game mode
+        foreach (Card card in opponentHand)
         {
-            Card card = opponentHand[i];
             GameObject newCard = Instantiate(cardPrefab, opponentHandTransform);
             Image cardImage = newCard.GetComponent<Image>();
-            cardImage.sprite = GetCardSprite(card); // Set the card image
+            // Determine if showing the back of the card or the face
+            if (GameSettings.IsPlayingAgainstAI)
+            {
+                // Show card back for AI mode
+                cardImage.sprite = GetBackSprite();
+            }
+            else
+            {
+                // Show card face for PVP mode
+                cardImage.sprite = GetCardSprite(card);
+            }
         }
     }
+
+
+    private Sprite GetBackSprite()
+    {
+        string backSpriteName = "basic_back_1";
+        foreach (Sprite sprite in cardSprites)
+        {
+            if (sprite.name.Equals(backSpriteName, System.StringComparison.OrdinalIgnoreCase))
+            {
+                return sprite;
+            }
+        }
+        Debug.LogError("Back sprite not found: " + backSpriteName);
+        return null;
+    }
+
+
+
 
 
     public void RemoveCardFromHandDisplay(int cardIndex)
@@ -145,6 +196,7 @@ public class UIManager : MonoBehaviour
             Debug.LogError("Card selected at an inappropriate time.");
         }
     }
+
 
 
 
