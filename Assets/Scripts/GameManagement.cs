@@ -103,7 +103,7 @@ public class GameManagement : MonoBehaviour
         Debug.Log($"{player.name} successfully attacks with {cardToPlay.rank} of {cardToPlay.suit}");
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
-        uiManager.MoveCardToPlayArea(cardToPlay, player == currentAttacker, uiManager.playerHandTransform.GetComponent<HorizontalLayoutGroup>());
+        // uiManager.MoveCardToPlayArea(cardToPlay, player == currentAttacker, uiManager.playerHandTransform.GetComponent<HorizontalLayoutGroup>());
 
         UpdateGameState();
     }
@@ -169,7 +169,7 @@ public class GameManagement : MonoBehaviour
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
 
-        uiManager.MoveCardToPlayArea(cardToPlay, player == currentDefender, uiManager.opponentHandTransform.GetComponent<HorizontalLayoutGroup>());
+        // uiManager.MoveCardToPlayArea(cardToPlay, player == currentDefender, uiManager.opponentHandTransform.GetComponent<HorizontalLayoutGroup>());
 
         UpdateGameState();
     }

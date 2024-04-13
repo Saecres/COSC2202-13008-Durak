@@ -211,7 +211,7 @@ public class UIManager : MonoBehaviour
             Debug.LogError("Deck count Text UI component is not assigned.");
     }
 
-    public void MoveCardToPlayArea(Card card, bool isPlayerCard, HorizontalLayoutGroup layoutGroup)
+/*    public void MoveCardToPlayArea(Card card, bool isPlayerCard, HorizontalLayoutGroup layoutGroup)
     {
         GameObject newCard = Instantiate(cardPrefab, playAreaTransform);
         newCard.transform.position = isPlayerCard ? playerHandTransform.position : opponentHandTransform.position; // Start position based on whose card it is
@@ -248,7 +248,7 @@ public class UIManager : MonoBehaviour
         {
             layoutGroup.enabled = true;
         }
-    }
+    }*/
 
 
 
