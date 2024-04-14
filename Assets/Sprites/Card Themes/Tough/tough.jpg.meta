@@ -1,0 +1,1360 @@
+fileFormatVersion: 2
+guid: b2c2ccfa1f6853349a7d180b17c285ef
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tough_joker_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab9eb396721f414cbef7e0b6148d875
+      internalID: 699935711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_A
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 2662
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b255306c1fcb65f47a4970db95832b77
+      internalID: -578138572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_K
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437b67a1f837af346991b145846ce050
+      internalID: -1355249363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_Q
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c2ac83c81a3844ea65bd8d0d2af3a1
+      internalID: -1921258118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_J
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 2662
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cc17b74dd7d4e4aa8f6a426f48c1db
+      internalID: -836617176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_10
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1067cbc584cead547b9a184e0c2efb40
+      internalID: -1168964994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_9
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdeefe4d40618a64fa1a0ef9e10619df
+      internalID: -1423735062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_8
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7766bf6b66acc418de2dbdfee802dd
+      internalID: 1902280349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_7
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6646e1937017457418a6236ea4e64d47
+      internalID: 1750144334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_6
+      rect:
+        serializedVersion: 2
+        x: 4802
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7322e20d1c066843b5ab0d8950539b0
+      internalID: 1006525769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_5
+      rect:
+        serializedVersion: 2
+        x: 5330
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e804ee0fb88eda64582f57fb9ca467b6
+      internalID: -910099931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_4
+      rect:
+        serializedVersion: 2
+        x: 5859
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9308f30a24c10ea478bbd63588ab7333
+      internalID: 338079556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_3
+      rect:
+        serializedVersion: 2
+        x: 6388
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabc7447a1bd8554a89e8039b8e47703
+      internalID: 100001055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_hearts_2
+      rect:
+        serializedVersion: 2
+        x: 6916
+        y: 2661
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22147dd31f3b2ee459a8886f1296096b
+      internalID: 1963581235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_back_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375167b768097974a8f3e30e49601d3a
+      internalID: -1326360385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_A
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9427d952be17c6841a2c19a692aed2c2
+      internalID: -1385516014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_K
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7a7afcd6a0dd14588859bba863aa86
+      internalID: -1771781073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_Q
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde2863bfec77d14385b742869eee729
+      internalID: 1095790721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_J
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844c02cd99a79e64392f3447ebc242e3
+      internalID: -398063576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_10
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13786cb076293149aef24b23453c465
+      internalID: -275082897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_9
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d149e165f7daa04aa3fcefdf0f0f83f
+      internalID: 745229006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_8
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe47dab00adea26479fc3460126ae2d8
+      internalID: 942866513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_7
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fb0bdc9827b274b963287c0f9fe932
+      internalID: -12286986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_6
+      rect:
+        serializedVersion: 2
+        x: 4802
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c22cb29f33b22459d3564c812e6049
+      internalID: 1091246780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_5
+      rect:
+        serializedVersion: 2
+        x: 5330
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c2f69a9940d77458cd726d4b372255
+      internalID: 1986853106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_4
+      rect:
+        serializedVersion: 2
+        x: 5859
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935b7baecbc04d34da66deb7e9c5bf23
+      internalID: 751277462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_3
+      rect:
+        serializedVersion: 2
+        x: 6388
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af03d5d23bfa89040b2d6110a573a5bf
+      internalID: -795121981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_spade_2
+      rect:
+        serializedVersion: 2
+        x: 6916
+        y: 1929
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae20f3f6a843114db820a39bfc596a6
+      internalID: -1280903592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_A
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e375d7208b12b42a96ae8310fc0f56
+      internalID: 82337703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_K
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3faf1ddec9c6022428c3bb353f2a62a8
+      internalID: 1590411546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_Q
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df48e6ce90662543a97251e75d24453
+      internalID: 1681955468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_J
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e3e8fbf6bd5344cbe00fea3162c43a
+      internalID: -1705282948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_10
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb1ca7e0b5bd524092240f23e2b76ab
+      internalID: -933112058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_9
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dcd6b96b90de2499c7c10e9c722b51
+      internalID: -1429144003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_8
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e62e7dd4161f3429703a6ac1771853
+      internalID: -1361672566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_36
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e612c4a5b54d824fbbc1d56cc629d07
+      internalID: -1468331456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_6
+      rect:
+        serializedVersion: 2
+        x: 4802
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97b6cc6e7a61e8479d8c2c314061af7
+      internalID: 1445108354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_5
+      rect:
+        serializedVersion: 2
+        x: 5330
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb06654575d8b7f4e85f4e7d07922c6d
+      internalID: -635091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_4
+      rect:
+        serializedVersion: 2
+        x: 5859
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19e41585c028fa4caedd1bc79cb5e16
+      internalID: 10175857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_3
+      rect:
+        serializedVersion: 2
+        x: 6388
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3caab58ac3122b9489bc0d6e7a13fefe
+      internalID: -1352863748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_2
+      rect:
+        serializedVersion: 2
+        x: 6916
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602990559fde3fe4a97a5072cbc2a68f
+      internalID: 867788577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_joker_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3c860e1800b4347b1e9c05f75f6828
+      internalID: -703270046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_A
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38ebdd412e8aa847b5d3037d1d9d88a
+      internalID: -1563660959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_K
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f3d51b9c165fe489eb9e25be382bf5
+      internalID: 384205255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_Q
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832fea34119511749b20888ebd275b6b
+      internalID: -1841714617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_J
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58b16c2ec7b325498e04d793987bac7
+      internalID: -1249120130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_10
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21ac4eed0da1214b9557d23c0c97a77
+      internalID: -1594145758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_9
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a7dd973a6c46d4abf7090f5d424642
+      internalID: 1292174501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_8
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c067de48008214fa0d34cf28545848
+      internalID: 1896789018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_7
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e3880421e23e945ac8c78eb3f216af
+      internalID: 101248076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_6
+      rect:
+        serializedVersion: 2
+        x: 4802
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68dc6276178fef14e882135ab8f4be38
+      internalID: 217852562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_5
+      rect:
+        serializedVersion: 2
+        x: 5330
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865aa97a6de85934eb991283f7e928fd
+      internalID: -908977369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_4
+      rect:
+        serializedVersion: 2
+        x: 5859
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d53e5874379654abd0cdb71ef0b9ab
+      internalID: 837068595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_3
+      rect:
+        serializedVersion: 2
+        x: 6388
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea702977eb0c36a4daa37b21ee7cb723
+      internalID: 36675023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_clubs_2
+      rect:
+        serializedVersion: 2
+        x: 6916
+        y: 71
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032e6e0361303654b97e2f126aa5c6e6
+      internalID: 664208407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tough_diamond_7
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 808
+        width: 454
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8116af94a1f89054db62b1e9812cb6d4
+      internalID: 2140527555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tough_36: -1468331456
+      tough_56: -1804074661
+      tough_back_1: -1326360385
+      tough_clubs_10: -1594145758
+      tough_clubs_2: 664208407
+      tough_clubs_3: 36675023
+      tough_clubs_4: 837068595
+      tough_clubs_5: -908977369
+      tough_clubs_6: 217852562
+      tough_clubs_7: 101248076
+      tough_clubs_8: 1896789018
+      tough_clubs_9: 1292174501
+      tough_clubs_A: -1563660959
+      tough_clubs_J: -1249120130
+      tough_clubs_K: 384205255
+      tough_clubs_Q: -1841714617
+      tough_diamond_10: -933112058
+      tough_diamond_2: 867788577
+      tough_diamond_3: -1352863748
+      tough_diamond_4: 10175857
+      tough_diamond_5: -635091
+      tough_diamond_6: 1445108354
+      tough_diamond_7: 2140527555
+      tough_diamond_8: -1361672566
+      tough_diamond_9: -1429144003
+      tough_diamond_A: 82337703
+      tough_diamond_J: -1705282948
+      tough_diamond_K: 1590411546
+      tough_diamond_Q: 1681955468
+      tough_hearts_10: -1168964994
+      tough_hearts_2: 1963581235
+      tough_hearts_3: 100001055
+      tough_hearts_4: 338079556
+      tough_hearts_5: -910099931
+      tough_hearts_6: 1006525769
+      tough_hearts_7: 1750144334
+      tough_hearts_8: 1902280349
+      tough_hearts_9: -1423735062
+      tough_hearts_A: -578138572
+      tough_hearts_J: -836617176
+      tough_hearts_K: -1355249363
+      tough_hearts_Q: -1921258118
+      tough_joker_1: 699935711
+      tough_joker_2: -703270046
+      tough_spade_10: -275082897
+      tough_spade_2: -1280903592
+      tough_spade_3: -795121981
+      tough_spade_4: 751277462
+      tough_spade_5: 1986853106
+      tough_spade_6: 1091246780
+      tough_spade_7: -12286986
+      tough_spade_8: 942866513
+      tough_spade_9: 745229006
+      tough_spade_A: -1385516014
+      tough_spade_J: -398063576
+      tough_spade_K: -1771781073
+      tough_spade_Q: 1095790721
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
