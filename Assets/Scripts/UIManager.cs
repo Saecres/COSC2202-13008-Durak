@@ -15,6 +15,8 @@ public class UIManager : MonoBehaviour
     public Transform opponentHandTransform;
 
     public Text deckCountText;
+    public Text currentAttackerText;
+    public Text currentDefenderText;
     public Image discardPileImage;
     public Text discardPileCountText;
     public Text trumpSuitText;
@@ -48,6 +50,30 @@ public class UIManager : MonoBehaviour
             Debug.LogError("CardDatabase or TrumpSuitText is not assigned in the UIManager.");
         }
     }
+    public void UpdateAttackerDisplay(string attackerName)
+    {
+        if (currentAttackerText != null)
+        {
+            currentAttackerText.text = "Attacker: " + attackerName;
+        }
+        else
+        {
+            Debug.LogError("Attacker text UI component is not assigned.");
+        }
+    }
+
+    public void UpdateDefenderDisplay(string defenderName)
+    {
+        if (currentDefenderText != null)
+        {
+            currentDefenderText.text = "Defender: " + defenderName;
+        }
+        else
+        {
+            Debug.LogError("Defender text UI component is not assigned.");
+        }
+    }
+
 
 
 
