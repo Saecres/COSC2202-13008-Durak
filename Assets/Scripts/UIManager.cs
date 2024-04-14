@@ -15,8 +15,13 @@ public class UIManager : MonoBehaviour
     public Transform opponentHandTransform;
 
     public Text deckCountText;
+    public Text currentAttackerText;
+    public Text currentDefenderText;
     public Image discardPileImage;
     public Text discardPileCountText;
+    public Text trumpSuitText;
+    public CardDatabase cardDatabase;
+
 
     public GameObject cardPrefab;
     [SerializeField] private Sprite[] cardSprites;
@@ -33,6 +38,43 @@ public class UIManager : MonoBehaviour
             Debug.LogWarning("Another instance of UIManager was created and will be ignored. Only one instance should exist.");
         }
     }
+
+    public void UpdateTrumpSuitDisplay()
+    {
+        if (cardDatabase != null && trumpSuitText != null)
+        {
+            trumpSuitText.text = "Trump Suit: " + cardDatabase.trumpSuit.ToUpper();
+        }
+        else
+        {
+            Debug.LogError("CardDatabase or TrumpSuitText is not assigned in the UIManager.");
+        }
+    }
+    public void UpdateAttackerDisplay(string attackerName)
+    {
+        if (currentAttackerText != null)
+        {
+            currentAttackerText.text = "Attacker: " + attackerName;
+        }
+        else
+        {
+            Debug.LogError("Attacker text UI component is not assigned.");
+        }
+    }
+
+    public void UpdateDefenderDisplay(string defenderName)
+    {
+        if (currentDefenderText != null)
+        {
+            currentDefenderText.text = "Defender: " + defenderName;
+        }
+        else
+        {
+            Debug.LogError("Defender text UI component is not assigned.");
+        }
+    }
+
+
 
 
     public void UpdateHandDisplay(List<Card> playerHand)

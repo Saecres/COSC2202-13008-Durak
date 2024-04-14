@@ -37,6 +37,9 @@ public class GameManagement : MonoBehaviour
         uiManager.UpdateHandDisplay(currentAttacker.hand);
         uiManager.UpdateOpponentHandDisplay(currentDefender.hand);
         UIManager.Instance.UpdateDeckCountDisplay(cardDatabase.cardList.Count);
+        UIManager.Instance.UpdateTrumpSuitDisplay();
+        uiManager.UpdateAttackerDisplay(currentAttacker.name);
+        uiManager.UpdateDefenderDisplay(currentDefender.name);
     }
 
 
@@ -395,6 +398,8 @@ public class GameManagement : MonoBehaviour
         }
         UIManager.Instance.UpdateDeckCountDisplay(cardDatabase.cardList.Count);
         uiManager.UpdateDiscardPileDisplay(discardPile);
+        uiManager.UpdateAttackerDisplay(currentAttacker.name);
+        uiManager.UpdateDefenderDisplay(currentDefender.name);
     }
 
     private void CheckForGameEnd()
