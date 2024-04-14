@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagement : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManagement : MonoBehaviour
     public UIManager uiManager;
     public GameRules gameRules;
     public CardDatabase cardDatabase;
+    public GameWinner gameWinner;
 
     public List<Player> players = new List<Player>();
     public List<Card> playArea = new List<Card>();
@@ -437,15 +439,9 @@ public class GameManagement : MonoBehaviour
 
     private void EndGame(Player player, bool isDurak)
     {
-        if (isDurak)
-        {
-            Debug.Log($"Game Over. {player.name} is the Durak.");
-        }
-        else
-        {
-            Debug.Log($"Congratulations! {player.name} has won the game.");
-        }
+        GameWinner.DeclareWinner(player.name, isDurak);
     }
+
 
 
     public void UpdateGameState()
