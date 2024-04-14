@@ -38,4 +38,14 @@ public class GameCustomizeMenu : MonoBehaviour
     {
         SceneManager.LoadScene("2P Customization");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void ChangeAvatarScene()
+    {
+        SceneManager.LoadSceneAsync("Avatar Select");
+    }
 }
