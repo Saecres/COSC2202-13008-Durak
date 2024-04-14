@@ -48,4 +48,9 @@ public class GameCustomizeMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Avatar Select");
     }
+
+    public void GameModeScene()
+    {
+        SceneManager.LoadScene("Game Customize");
+    }
 }
