@@ -37,6 +37,7 @@ public class GameManagement : MonoBehaviour
         uiManager.UpdateHandDisplay(currentAttacker.hand);
         uiManager.UpdateOpponentHandDisplay(currentDefender.hand);
         UIManager.Instance.UpdateDeckCountDisplay(cardDatabase.cardList.Count);
+        UIManager.Instance.UpdateTrumpSuitDisplay();
     }
 
 

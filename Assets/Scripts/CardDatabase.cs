@@ -7,6 +7,7 @@ public class CardDatabase : MonoBehaviour
     public List<Card> cardList = new List<Card>(); // Changed from static to instance variable
     public string trumpSuit; // Added trump suit property
 
+
     void Awake()
     {
         if (Instance == null)
@@ -60,6 +61,7 @@ public class CardDatabase : MonoBehaviour
             int randomIndex = Random.Range(0, cardList.Count);
             trumpSuit = cardList[randomIndex].suit; // Assign a random card's suit as the trump
             Debug.Log("Trump Suit: " + trumpSuit);
+            UIManager.Instance.UpdateTrumpSuitDisplay();
         }
     }
 

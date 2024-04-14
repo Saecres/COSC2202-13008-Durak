@@ -17,6 +17,9 @@ public class UIManager : MonoBehaviour
     public Text deckCountText;
     public Image discardPileImage;
     public Text discardPileCountText;
+    public Text trumpSuitText;
+    public CardDatabase cardDatabase;
+
 
     public GameObject cardPrefab;
     [SerializeField] private Sprite[] cardSprites;
@@ -33,6 +36,19 @@ public class UIManager : MonoBehaviour
             Debug.LogWarning("Another instance of UIManager was created and will be ignored. Only one instance should exist.");
         }
     }
+
+    public void UpdateTrumpSuitDisplay()
+    {
+        if (cardDatabase != null && trumpSuitText != null)
+        {
+            trumpSuitText.text = "Trump Suit: " + cardDatabase.trumpSuit.ToUpper();
+        }
+        else
+        {
+            Debug.LogError("CardDatabase or TrumpSuitText is not assigned in the UIManager.");
+        }
+    }
+
 
 
     public void UpdateHandDisplay(List<Card> playerHand)
