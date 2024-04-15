@@ -54,12 +54,12 @@ public class GameRules : MonoBehaviour
     public void PromptPlayerForFollowUpAttack()
     {
         Debug.Log("Player can make a follow-up attack. Select a card to play.");
+        ChatLogController.Log("Player can make a follow-up attack. Select a card to play.");
         // Update the UI accordingly to prompt the player.
     }
 
     public bool CheckForDefense(Player defender, Card attackingCard)
     {
-        // Return true if there's at least one card in the defender's hand that can defend against the attacking card.
         return defender.hand.Any(card => CanPlayerDefendWithCard(attackingCard, card));
     }
 
@@ -68,13 +68,12 @@ public class GameRules : MonoBehaviour
         if (CheckForDefense(defender, attackingCard))
         {
             Debug.Log("Defense is possible. Player should choose a card to defend.");
-            // Here, you might interact with the UIManager or another system to visually prompt the player.
-            // For example, you might highlight the attacking card and possible defense cards.
+            ChatLogController.Log("Defense is possible. Player should choose a card to defend.");
         }
         else
         {
             Debug.Log("No defense possible. Player must take other actions (e.g., picking up the play area cards).");
-            // You might want to automatically trigger actions like picking up cards if no defense is possible.
+            ChatLogController.Log("No defense possible. Player must take other actions (e.g., picking up the play area cards).");
         }
     }
 

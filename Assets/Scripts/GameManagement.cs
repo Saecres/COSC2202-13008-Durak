@@ -96,6 +96,7 @@ public class GameManagement : MonoBehaviour
         else
         {
             Debug.LogError("Invalid attack move.");
+            ChatLogController.Log("Invalid attack move.");
         }
     }
 
@@ -106,6 +107,7 @@ public class GameManagement : MonoBehaviour
     void ExecuteAttack(Player player, Card cardToPlay)
     {
         Debug.Log($"{player.name} successfully attacks with {cardToPlay.rank} of {cardToPlay.suit}");
+        ChatLogController.Log($"{player.name} successfully attacks with {cardToPlay.rank} of {cardToPlay.suit}");
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
         uiManager.MoveCardToPlayArea(cardToPlay);
@@ -156,6 +158,7 @@ public class GameManagement : MonoBehaviour
         else
         {
             Debug.LogError("Invalid defense move.");
+            ChatLogController.Log("Invalid defense move.");
         }
     }
 
@@ -169,6 +172,7 @@ public class GameManagement : MonoBehaviour
     void ExecuteDefense(Player player, Card cardToPlay)
     {
         Debug.Log($"{player.name} successfully defends with {cardToPlay.rank} of {cardToPlay.suit}");
+        ChatLogController.Log($"{player.name} successfully defends with {cardToPlay.rank} of {cardToPlay.suit}");
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
         uiManager.MoveCardToPlayArea(cardToPlay);
@@ -184,6 +188,7 @@ public class GameManagement : MonoBehaviour
         if (!CanAttackerContinue())
         {
             Debug.Log("Attacker cannot continue");
+            ChatLogController.Log("Attacker cannot continue");
             DiscardPlayAreaCards();
             discardPileCount += playArea.Count;
             SwitchRoles();  // Switch roles for the next turn
@@ -193,6 +198,7 @@ public class GameManagement : MonoBehaviour
         else if (DidDefenderPickUp())
         {
             Debug.Log("Defender picked up cards, switching roles.");
+            ChatLogController.Log("Defender picked up cards, switching roles.");
             SwitchRoles();
             didDefenderPickUp = false;  // Reset the flag after switching roles
             endTurnConditionsMet = true;
@@ -294,6 +300,7 @@ public class GameManagement : MonoBehaviour
         if (currentAttacker.isAI == isAI)
         {
             Debug.Log($"{(isAI ? "AI" : "Player")} forfeits attack. Discarding play area cards.");
+            ChatLogController.Log($"{(isAI ? "AI" : "Player")} forfeits attack. Discarding play area cards.");
             didDefenderPickUp = true;
             ForfeitAttackAndDiscard();
             DealCardsIfNeeded();
@@ -301,6 +308,7 @@ public class GameManagement : MonoBehaviour
         else  // The current defender is forfeiting
         {
             Debug.Log($"{(isAI ? "AI" : "Player")} forfeits defense. Picking up play area cards.");
+            ChatLogController.Log($"{(isAI ? "AI" : "Player")} forfeits defense. Picking up play area cards.");
             didDefenderPickUp = true;
             DefenderPicksUpCards();
             DealCardsIfNeeded();
@@ -317,6 +325,7 @@ public class GameManagement : MonoBehaviour
             discardPile.AddRange(playArea);
             discardPileCount += playArea.Count;  // Update the discard pile counter
             Debug.Log($"Cards moved to discard pile. Total discard count: {discardPileCount}");
+            ChatLogController.Log($"Cards moved to discard pile. Total discard count: {discardPileCount}");
             playArea.Clear();
             uiManager.ClearPlayArea();
             UpdateGameState();
@@ -426,6 +435,7 @@ public class GameManagement : MonoBehaviour
             else
             {
                 Debug.LogError("Unexpected state: No cards in any hands but no Durak declared.");
+                ChatLogController.Log("Unexpected state: No cards in any hands but no Durak declared.");
             }
         }
     }
