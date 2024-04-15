@@ -408,22 +408,16 @@ public class GameManagement : MonoBehaviour
 
     private void CheckForGameEnd()
     {
+        // Check if the deck is empty
         if (cardDatabase.cardList.Count == 0)
         {
-            Player winner = playerManager.players.FirstOrDefault(p => p.hand.Count == 0);
-            if (winner != null)
-            {
-                Debug.Log($"{winner.name} has won the game by emptying their hand first!");
-                EndGame(winner, false);
-                return;
-            }
-
             List<Player> playersWithCards = playerManager.players.Where(p => p.hand.Count > 0).ToList();
             if (playersWithCards.Count == 1)
             {
+                // Only one player with cards is the Durak
                 Player durak = playersWithCards[0];
                 Debug.Log($"{durak.name} is the Durak for having cards left!");
-                EndGame(durak, true);
+                EndGame(durak);
             }
             else if (playersWithCards.Count > 1)
             {
@@ -431,7 +425,7 @@ public class GameManagement : MonoBehaviour
             }
             else
             {
-                Debug.LogError("Unexpected state: No cards in any hands but no winner declared.");
+                Debug.LogError("Unexpected state: No cards in any hands but no Durak declared.");
             }
         }
     }
@@ -439,10 +433,11 @@ public class GameManagement : MonoBehaviour
 
 
 
-    private void EndGame(Player player, bool isDurak)
+    private void EndGame(Player durak)
     {
-        GameWinner.DeclareWinner(player.name, isDurak);
+        GameWinner.DeclareWinner(durak.name);  // Declare the Durak
     }
+
 
 
 
