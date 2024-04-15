@@ -294,6 +294,7 @@ public class GameManagement : MonoBehaviour
         if (currentAttacker.isAI == isAI)
         {
             Debug.Log($"{(isAI ? "AI" : "Player")} forfeits attack. Discarding play area cards.");
+            didDefenderPickUp = true;
             ForfeitAttackAndDiscard();
             DealCardsIfNeeded();
         }
