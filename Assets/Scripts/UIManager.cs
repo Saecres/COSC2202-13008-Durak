@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using System.Linq;
+using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
@@ -264,10 +265,11 @@ public class UIManager : MonoBehaviour
 
     public void MoveCardToPlayArea(Card card)
     {
-        GameObject newCard = Instantiate(cardPrefab, playAreaTransform);
-        Image cardImage = newCard.GetComponent<Image>();
-        cardImage.sprite = GetCardSprite(card); // Use existing method to get the sprite
+        GameObject cardObject = Instantiate(cardPrefab, playerHandTransform.position, Quaternion.identity);
+        cardObject.GetComponent<Image>().sprite = GetCardSprite(card);
+        StartCoroutine(MoveCardToPosition(cardObject, playerHandTransform.position, playAreaTransform));
     }
+
 
     public void ClearPlayArea()
     {
@@ -302,6 +304,20 @@ public class UIManager : MonoBehaviour
             deckCountText.text = count.ToString();
         else
             Debug.LogError("Deck count Text UI component is not assigned.");
+    }
+
+    public IEnumerator MoveCardToPosition(GameObject card, Vector3 startPosition, Transform endParent)
+    {
+        float timeToMove = 0.5f;
+        float elapsed = 0;
+        while (elapsed < timeToMove)
+        {
+            elapsed += Time.deltaTime;
+            card.transform.position = Vector3.Lerp(startPosition, endParent.position, elapsed / timeToMove);
+            yield return null;
+        }
+        card.transform.SetParent(endParent);
+        card.transform.localScale = Vector3.one;  // Reset scale if it's modified elsewhere
     }
 
 

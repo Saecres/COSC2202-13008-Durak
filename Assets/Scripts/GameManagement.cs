@@ -102,14 +102,15 @@ public class GameManagement : MonoBehaviour
 
 
     // Executes an attack, updates play area and UI.
-    void ExecuteAttack(Player player, Card cardToPlay)
+    public void ExecuteAttack(Player player, Card cardToPlay)
     {
-        Debug.Log($"{player.name} successfully attacks with {cardToPlay.rank} of {cardToPlay.suit}");
+        Debug.Log($"{player.name} attacks with {cardToPlay.rank} of {cardToPlay.suit}");
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
-        uiManager.MoveCardToPlayArea(cardToPlay);
+        uiManager.MoveCardToPlayArea(cardToPlay); 
         UpdateGameState();
     }
+
 
     // Handles a player's defense attempt.
     public void HandleDefense(Player player, Card cardToPlay)
@@ -170,7 +171,7 @@ public class GameManagement : MonoBehaviour
         Debug.Log($"{player.name} successfully defends with {cardToPlay.rank} of {cardToPlay.suit}");
         playArea.Add(cardToPlay);
         player.RemoveCardFromHand(cardToPlay);
-        uiManager.MoveCardToPlayArea(cardToPlay);
+        uiManager.MoveCardToPlayArea(cardToPlay);  
         UpdateGameState();
     }
 
