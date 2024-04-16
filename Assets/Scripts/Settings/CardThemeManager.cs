@@ -2,25 +2,25 @@ using UnityEngine;
 
 public class CardThemeManager : MonoBehaviour
 {
-    private readonly string[] themes = { "basic", "anime", "black","pixel","tough" };
+    private readonly string[] cardThemes = { "basic", "anime", "black","pixel","tough" };
 
-    public void SetCardTheme(int themeIndex)
+    public void SetCardTheme(int cardThemeIndex)
     {
-        if (themeIndex >= 0 && themeIndex < themes.Length)
+        if (cardThemeIndex >= 0 && cardThemeIndex < cardThemes.Length)
         {
-            PlayerPrefs.SetInt("SelectedTheme", themeIndex);
+            PlayerPrefs.SetInt("SelectedCardTheme", cardThemeIndex);
             PlayerPrefs.Save();
-            Debug.Log("Card Theme set to: " + themes[themeIndex]);
+            Debug.Log("Card Theme set to: " + cardThemes[cardThemeIndex]);
         }
         else
         {
-            Debug.LogError("Invalid theme index: " + themeIndex);
+            Debug.LogError("Invalid Card Theme index: " + cardThemeIndex);
         }
     }
 
     public string GetCurrentThemePrefix()
     {
-        int themeIndex = PlayerPrefs.GetInt("SelectedTheme", 0); 
-        return themes[themeIndex];
+        int themeIndex = PlayerPrefs.GetInt("SelectedCardTheme", 0); 
+        return cardThemes[themeIndex];
     }
 }
