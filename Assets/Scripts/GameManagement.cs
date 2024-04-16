@@ -427,6 +427,7 @@ public class GameManagement : MonoBehaviour
                 Player durak = playersWithCards[0];
                 Debug.Log($"{durak.name} is the Durak for having cards left!");
                 EndGame(durak);
+                LeaderBoard.UpdatePlayerLoses(durak.name);
             }
             else if (playersWithCards.Count > 1)
             {
