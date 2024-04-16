@@ -43,6 +43,7 @@ public class GameManagement : MonoBehaviour
         UIManager.Instance.UpdateTrumpSuitDisplay();
         uiManager.UpdateAttackerDisplay(currentAttacker.name);
         uiManager.UpdateDefenderDisplay(currentDefender.name);
+        uiManager.UpdateDiscardPileDisplay(discardPile);
     }
 
 
