@@ -1,21 +1,22 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class GameOverUIManager : MonoBehaviour
 {
-    public Text gameOverText;
+    public TextMeshProUGUI gameOverText; 
 
     private void Start()
     {
         // Check and display the winner message if available
         if (gameOverText != null && !string.IsNullOrEmpty(GameWinner.WinnerMessage))
         {
-            gameOverText.text = GameWinner.WinnerMessage;
-            GameWinner.ClearWinnerMessage();  // Clear the static message after displaying
+            gameOverText.text = GameWinner.WinnerMessage; 
+            GameWinner.ClearWinnerMessage(); 
         }
         else
         {
-            Debug.LogError("GameOver text component is missing or winner message is empty.");
+            Debug.LogError("GameOver TextMeshProUGUI component is missing or winner message is empty.");
         }
     }
 }
+

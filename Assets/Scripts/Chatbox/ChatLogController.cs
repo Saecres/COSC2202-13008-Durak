@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;  // Include this if you're using TextMeshPro
+using TMPro; 
 
 public class ChatLogController : MonoBehaviour
 {

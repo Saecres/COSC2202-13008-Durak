@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GameWinner : MonoBehaviour
 {
     public static string WinnerMessage { get; private set; }  // Holds the Durak message
