@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     public Text currentAttackerText;
     public Text currentDefenderText;
     public Image discardPileImage;
+    public Image deckImage;
     public Text discardPileCountText;
     public Text trumpSuitText;
     public CardDatabase cardDatabase;
@@ -75,8 +76,6 @@ public class UIManager : MonoBehaviour
             Debug.LogError("Defender text UI component is not assigned.");
         }
     }
-
-
 
 
     public void UpdateHandDisplay(List<Card> playerHand)
@@ -305,7 +304,25 @@ public class UIManager : MonoBehaviour
             deckCountText.text = count.ToString();
         else
             Debug.LogError("Deck count Text UI component is not assigned.");
+
+        if (deckImage != null)
+        {
+            if (count > 0)
+            {
+                deckImage.sprite = GetBackSprite();
+                deckImage.gameObject.SetActive(true);
+            }
+            else
+            {
+                deckImage.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            Debug.LogError("Deck Image UI component is not assigned.");
+        }
     }
+
 
 
 }
