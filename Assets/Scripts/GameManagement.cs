@@ -48,7 +48,6 @@ public class GameManagement : MonoBehaviour
 
 
     // Assigns initial attacker and defender roles.
-    // Modify AssignInitialRoles to use the player manager's list
     void AssignInitialRoles()
     {
         if (playerManager.players.Count >= 2)
