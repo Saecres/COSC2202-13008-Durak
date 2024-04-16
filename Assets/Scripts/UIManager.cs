@@ -24,7 +24,9 @@ public class UIManager : MonoBehaviour
 
 
     public GameObject cardPrefab;
-    [SerializeField] private Sprite[] cardSprites;
+    [SerializeField] private Sprite[] cardSprites; 
+    [SerializeField] private CardThemeManager cardThemeManager; 
+
     public static UIManager Instance;
 
     void Awake()
@@ -153,7 +155,8 @@ public class UIManager : MonoBehaviour
 
     private Sprite GetBackSprite()
     {
-        string backSpriteName = "basic_back_1";
+        string themePrefix = cardThemeManager.GetCurrentThemePrefix();
+        string backSpriteName = $"{themePrefix}_back_1";
         foreach (Sprite sprite in cardSprites)
         {
             if (sprite.name.Equals(backSpriteName, System.StringComparison.OrdinalIgnoreCase))
@@ -245,8 +248,8 @@ public class UIManager : MonoBehaviour
 
     private Sprite GetCardSprite(Card card)
     {
-        // Construct the name of the sprite based on the card's suit and rank
-        string spriteName = $"basic_{card.suit.ToLower()}_{card.rank}".ToLower();
+        string themePrefix = cardThemeManager.GetCurrentThemePrefix(); 
+        string spriteName = $"{themePrefix}_{card.suit.ToLower()}_{card.rank}".ToLower();
 
         // Find the specific sprite by name in the manually assigned array
         foreach (Sprite sprite in cardSprites)
