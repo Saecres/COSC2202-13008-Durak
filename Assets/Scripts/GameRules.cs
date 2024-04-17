@@ -75,13 +75,14 @@ public class GameRules : MonoBehaviour
     }
 
 
-    // This method prompts the player to make a follow-up attack if possible.
-    // It displays a UI prompt to the player to continue their attack with another card.
+    /// <summary>
+    /// This method prompts the player to make a follow-up attack if possible
+    /// It displays a UI prompt to the player to continue their attack with another card.
+    /// </summary>
     public void PromptPlayerForFollowUpAttack()
     {
         Debug.Log("Player can make a follow-up attack. Select a card to play.");
         ChatLogController.Log("Player can make a follow-up attack. Select a card to play.");
-        // Update the UI accordingly to prompt the player.
     }
 
     public bool CheckForDefense(Player defender, Card attackingCard)
