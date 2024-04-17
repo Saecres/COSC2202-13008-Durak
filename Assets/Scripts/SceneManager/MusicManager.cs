@@ -10,17 +10,31 @@ public class MusicManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
             audioSource = GetComponent<AudioSource>();
+
+            LoadVolumeSettings();
         }
         else
         {
             Destroy(gameObject);
         }
     }
-
     public void SetVolume(float volume)
     {
         audioSource.volume = volume;
+        SaveVolume(volume); 
+    }
+
+    private void LoadVolumeSettings()
+    {
+        float savedVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f); 
+        SetVolume(savedVolume); 
+    }
+
+    private void SaveVolume(float volume)
+    {
+        PlayerPrefs.SetFloat("MusicVolume", volume);
+        PlayerPrefs.Save();
     }
 }
