@@ -25,7 +25,7 @@ public class LoadingScreen : MonoBehaviour
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
 
         // Waits for 18 second
-        yield return new WaitForSeconds(1000.0f);
+        yield return new WaitForSeconds(10000.0f);
 
         while (!operation.isDone) 
         {
