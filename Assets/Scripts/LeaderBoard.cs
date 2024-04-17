@@ -49,7 +49,7 @@ public class LeaderBoard : MonoBehaviour
         scoreText.text = "";
 
         // Populate leaderboard with new entries ( set to display only 10 players)
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 11; i++)
         {
             rankText.text += (i + 1).ToString() + "\n";
             playerText.text += entries[i].playerName + "\n";
