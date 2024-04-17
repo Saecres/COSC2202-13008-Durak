@@ -53,4 +53,8 @@ public class GameCustomizeMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Game Customize");
     }
+    public void LeaderBoardScene()
+    {
+        SceneManager.LoadScene("LeaderBoard");
+    }
 }
