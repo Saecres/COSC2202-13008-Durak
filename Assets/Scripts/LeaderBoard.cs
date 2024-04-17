@@ -13,7 +13,8 @@ public class LeaderBoard : MonoBehaviour
     public Text scoreText;
 
     // File path to the leaderboard file
-    private const string filePath = "Assets/Statistics/leaderboard.txt";
+    private static string filePath = "Assets/Statistics/leaderboard.txt";
+    private static LeaderBoard instance;
 
     // Updates the leaderboard as the leaderboard scene starts
     private void Start()
@@ -58,7 +59,7 @@ public class LeaderBoard : MonoBehaviour
 
     // this method will be used to update the textfile based on the player name to either add
     // or update a player
-    public void UpdatePlayerWins(string playerName)
+    public static void UpdatePlayerLoses(string playerName)
     {
         // Variables
         LeaderboardEntry[] leaderboardEntries = ReadLeaderboardFromFile(filePath);
@@ -79,7 +80,7 @@ public class LeaderBoard : MonoBehaviour
         // If the player does not exist add a new player
         if (!playerFound)
         {
-            // Add new player with 1 win
+            // Add new player with 1 lose
             List<LeaderboardEntry> tempList = new List<LeaderboardEntry>(leaderboardEntries);
             tempList.Add(new LeaderboardEntry { playerName = playerName, score = 1 });
             leaderboardEntries = tempList.ToArray();
@@ -92,11 +93,11 @@ public class LeaderBoard : MonoBehaviour
         WriteLeaderboardToFile(filePath, leaderboardEntries);
 
         // Update UI
-        UpdateUI(leaderboardEntries);
+        instance.UpdateUI(leaderboardEntries);
     }
 
     // Method to read from a file
-    LeaderboardEntry[] ReadLeaderboardFromFile(string path)
+    static LeaderboardEntry[] ReadLeaderboardFromFile(string path)
     {
         if (File.Exists(path))
         {
@@ -126,7 +127,7 @@ public class LeaderBoard : MonoBehaviour
     }
 
     // Method to write to a file
-    void WriteLeaderboardToFile(string path, LeaderboardEntry[] entries)
+    static void WriteLeaderboardToFile(string path, LeaderboardEntry[] entries)
     {
         using (StreamWriter writer = new StreamWriter(path))
         {
