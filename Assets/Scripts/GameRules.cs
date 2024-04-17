@@ -10,12 +10,23 @@ public class GameRules : MonoBehaviour
 
     public bool CanPlayerAttackWithCard(Card card, List<Card> playArea)
     {
-        // Allow any card to attack if the play area is empty.
-        if (!playArea.Any()) return true;
+        if (!playArea.Any()) return true; // Allow any card to attack if the play area is empty.
 
-        // Check for rank match to validate follow-up attacks.
-        return playArea.Any(playAreaCard => playAreaCard.rank == card.rank);
+        bool hasTrumpBeenPlayed = playArea.Any(c => c.IsTrump);
+        if (hasTrumpBeenPlayed)
+        {
+            // If a trump card has been played, follow-up trumps must be higher.
+            int highestTrumpRank = playArea.Where(c => c.IsTrump).Max(c => c.RankValue);
+            return playArea.Any(playAreaCard => playAreaCard.rank == card.rank) ||
+                   (card.IsTrump && card.RankValue > highestTrumpRank);
+        }
+        else
+        {
+            // If no trump has been played, any trump or matching rank can attack.
+            return playArea.Any(playAreaCard => playAreaCard.rank == card.rank) || card.IsTrump;
+        }
     }
+
 
     /// <summary>
     /// Checks if a card can defend against an attacking card according to the game rules.
@@ -46,8 +57,23 @@ public class GameRules : MonoBehaviour
     /// </summary>
     public bool CheckForFollowUpAttack(Player attacker, List<Card> playArea)
     {
-        return attacker.hand.Any(card => playArea.Any(playAreaCard => playAreaCard.rank == card.rank));
+        if (!playArea.Any()) return false; // No follow-up if the play area is empty
+
+        bool hasTrumpBeenPlayed = playArea.Any(c => c.IsTrump);
+        if (hasTrumpBeenPlayed)
+        {
+            // If a trump card has been played, only higher trumps or matching ranks are allowed.
+            int highestTrumpRank = playArea.Where(c => c.IsTrump).Max(c => c.RankValue);
+            return attacker.hand.Any(card => playArea.Any(playAreaCard => playAreaCard.rank == card.rank) ||
+                                             (card.IsTrump && card.RankValue > highestTrumpRank));
+        }
+        else
+        {
+            // If no trump has been played, any trump or matching rank can attack.
+            return attacker.hand.Any(card => playArea.Any(playAreaCard => playAreaCard.rank == card.rank) || card.IsTrump);
+        }
     }
+
 
     // This method prompts the player to make a follow-up attack if possible.
     // It displays a UI prompt to the player to continue their attack with another card.
